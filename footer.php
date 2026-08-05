@@ -122,7 +122,7 @@ text-sm
                 <?php echo $text['footer_connect']; ?>
             </p>
             <div class="flex gap-4">
-                <a href="#" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition">
+                <a href="https://www.facebook.com/share/19DmYABoMJ/" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition">
                     <i class="fa-brands fa-facebook-f"></i>
                 </a>
                 <a href="#" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-600 transition">
