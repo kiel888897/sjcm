@@ -50,7 +50,6 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             </p>
             <h1 class="mt-5 text-5xl md:text-6xl font-bold leading-tight">
                 Engineering Projects
-                & Building Solutions
             </h1>
             <p class="mt-6 max-w-2xl mx-auto text-blue-100 text-lg leading-relaxed">
                 Dokumentasi proyek yang mencerminkan kemampuan kami dalam
