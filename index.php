@@ -46,42 +46,38 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
     <?php include 'navbar.php'; ?>
 
     <!-- HERO PLACEHOLDER -->
-    <section class="pt-28 pb-20 min-h-[72vh] flex items-center">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <section class="pt-24 pb-16 sm:pt-28 sm:pb-20 min-h-[72vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
             <div>
-                <p class="text-blue-700 font-semibold tracking-widest uppercase mb-4">
+                <p class="text-blue-700 font-semibold tracking-widest uppercase mb-4 text-sm sm:text-base">
                     Construction & Consulting Services
                 </p>
-                <h1 class="text-5xl font-bold leading-tight text-gray-900">
+                <h1 class="text-4xl sm:text-5xl font-bold leading-tight text-gray-900">
                     Engineering Solutions
                     for Better Building Future
                 </h1>
-                <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                <p class="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed">
                     Layanan konsultasi arsitektur, struktur, MEP, PBG, SLF dan pengawasan konstruksi
                     dengan standar profesional.
                 </p>
-                <div class="mt-8 flex gap-4">
-                    <a href="contact.php" class="bg-blue-900 text-white px-8 py-3 rounded-lg">
+                <div class="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+                    <a href="contact.php" class="w-full sm:w-auto text-center bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold shadow-sm hover:bg-blue-800 transition">
                         Konsultasi Sekarang
                     </a>
-                    <a href="services.php" class="border border-blue-900 text-blue-900 px-8 py-3 rounded-lg">
+                    <a href="services.php" class="w-full sm:w-auto text-center border border-blue-900 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
                         Layanan Kami
                     </a>
                 </div>
             </div>
-            <div class="relative hero-float">
+            <div class="relative hero-float hidden md:block">
                 <img src="assets/images/hero-building.jpg"
-                    class="w-full h-[420px] object-cover rounded-3xl shadow-2xl shadow-blue-950/20 transition-transform duration-700 hover:scale-[1.02]"
+                    class="w-full h-[280px] sm:h-[360px] md:h-[420px] object-cover rounded-3xl shadow-2xl shadow-blue-950/20 transition-transform duration-700 hover:scale-[1.02]"
                     alt="SJCM Engineering Consultant">
                 <div class="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-900/60 to-cyan-900/50 rounded-3xl"></div>
                 <div class="absolute bottom-10 left-10 text-white max-w-md">
                     <p class="text-sm uppercase tracking-[4px] mb-4 text-blue-200">
                         Engineering Consultant
                     </p>
-                    <!-- <h2 class="text-4xl font-bold">
-                        Building Solutions
-                        Through Precision Engineering
-                    </h2> -->
                 </div>
             </div>
         </div>
@@ -89,7 +85,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
     <!-- About -->
 
-    <section class="relative py-24 bg-gradient-to-b from-slate-100 to-white overflow-hidden">
+    <section class="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-slate-100 to-white overflow-hidden">
 
 
         <!-- Decorative Background -->
@@ -106,13 +102,13 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
         </div>
 
 
-        <div class="relative max-w-7xl mx-auto px-6">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
 
 
             <div class="
         grid 
         md:grid-cols-2 
-        gap-16 
+        gap-8 sm:gap-10 lg:gap-16 
         items-center
         ">
 
@@ -128,7 +124,10 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                         alt="PT Sinergi Jaya Cipta Mandiri Engineering Consultant"
                         class="
                 w-full
-                h-[520px]
+                h-[280px]
+                sm:h-[360px]
+                md:h-[420px]
+                lg:h-[520px]
                 object-cover
                 rounded-3xl
                 shadow-2xl
@@ -178,7 +177,8 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
                     <h2 class="
                 mt-5
-                text-4xl
+                text-3xl
+                sm:text-4xl
                 md:text-5xl
                 font-bold
                 leading-tight
@@ -207,7 +207,8 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
                     <p class="
                 text-gray-600
-                text-lg
+                text-base
+                sm:text-lg
                 leading-relaxed
                 ">
 
@@ -223,7 +224,8 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     <p class="
                 mt-5
                 text-gray-600
-                text-lg
+                text-base
+                sm:text-lg
                 leading-relaxed
                 ">
 
@@ -272,7 +274,9 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
     </section>
 
     <section class="
-py-24
+py-16
+sm:py-20
+lg:py-24
 ">
 
 
@@ -316,8 +320,10 @@ font-bold
 
             <div class="
 grid
-md:grid-cols-3
-gap-8
+sm:grid-cols-2
+lg:grid-cols-3
+gap-6
+sm:gap-8
 ">
 
 
@@ -435,7 +441,7 @@ text-gray-600
 
 
     </section>
-    <section class="py-24 bg-gray-50">
+    <section class="py-16 sm:py-20 lg:py-24 bg-gray-50">
 
         <div class="max-w-7xl mx-auto px-6">
 
@@ -493,7 +499,6 @@ text-gray-600
             <div class="
         grid
         sm:grid-cols-2
-        md:grid-cols-3
         lg:grid-cols-4
         gap-6
         ">
@@ -981,7 +986,9 @@ gap-10
 
     </section>
     <section class="
-py-24
+py-16
+sm:py-20
+lg:py-24
 bg-blue-900
 text-white
 text-center

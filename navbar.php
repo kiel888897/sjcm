@@ -63,17 +63,14 @@ group-hover:scale-105
 
 
 
-                <div class="
-hidden
-lg:block
-ml-3
-">
+                <div class="lg:block ml-3">
 
 
                     <h2 class="
 font-bold
 text-blue-950
-text-lg
+text-base
+md:text-lg
 leading-tight
 tracking-tight
 ">
