@@ -241,38 +241,49 @@ bg-white/20
 
                 <!-- Founder / Director -->
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
-                    <img src="assets/images/team/photo_tim.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Founder">
+                    <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
                     <h3 class="text-xl font-bold mt-6">I Gede Suarjana S.T</h3>
-                    <p class="text-blue-700 font-semibold mt-1">Engineer</p>
+                    <p class="text-blue-700 font-semibold mt-1">Arsitek & Direktur</p>
                     <p class="mt-3 text-gray-600 text-sm">
-                        Sarjana Teknik Sipil dengan pengalaman lebih dari 10 tahun di bidang arsitektur dan manajemen konstruksi. Bersertifikasi profesional MEP dan pengawasan proyek.
+                        Sarjana Arsitek dengan pengalaman lebih dari 10 tahun di bidang Arsitektur, Interior dan lansekap
                     </p>
                 </div>
 
                 <!-- Engineering Team Example -->
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
-                    <img src="assets/images/team/engineer1.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer">
+                    <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <!-- <img src="assets/images/team/engineer1.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer"> -->
                     <h3 class="text-xl font-bold mt-6">Ir. Marlon Simanjuntak ST.,MT.,IPM</h3>
-                    <p class="text-blue-700 font-semibold mt-1"> Engineer</p>
+                    <p class="text-blue-700 font-semibold mt-1"> Insinyur Struktur & Direktur</p>
                     <p class="mt-3 text-gray-600 text-sm">
-                        Ahli struktur dengan pengalaman 7 tahun menangani proyek komersial dan residensial. Memiliki sertifikasi profesional STR.
+                        SarjanaTeknik Sipil dengan pengalaman lebih dari 10 tahun di bidang Perencanaan Struktur, Estimasi dan Manajemen Konstruksi
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
-                    <img src="assets/images/team/engineer2.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer">
-                    <h3 class="text-xl font-bold mt-6">Nama Tim</h3>
-                    <p class="text-blue-700 font-semibold mt-1">MEP Engineer</p>
+                    <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <!-- <img src="assets/images/team/engineer2.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer"> -->
+                    <h3 class="text-xl font-bold mt-6">Fajar ST</h3>
+                    <p class="text-blue-700 font-semibold mt-1">Insinyur MEP & Komisaris</p>
                     <p class="mt-3 text-gray-600 text-sm">
-                        Spesialis mekanikal, elektrikal, dan plumbing. Berpengalaman menangani perencanaan MEP untuk gedung perkantoran dan hunian mewah.
+                        SarjanaTeknik Elektro dengan pengalaman lebih dari 10 tahun di bidang Perencanaan MEP, dan Estimasi.
                     </p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
-                    <img src="assets/images/team/engineer2.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer">
-                    <h3 class="text-xl font-bold mt-6">Nama Tim</h3>
-                    <p class="text-blue-700 font-semibold mt-1">MEP Engineer</p>
+                    <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <!-- <img src="assets/images/team/engineer2.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer"> -->
+                    <h3 class="text-xl font-bold mt-6">Anis SE</h3>
+                    <p class="text-blue-700 font-semibold mt-1">Admin & Komisaris</p>
                     <p class="mt-3 text-gray-600 text-sm">
-                        Spesialis mekanikal, elektrikal, dan plumbing. Berpengalaman menangani perencanaan MEP untuk gedung perkantoran dan hunian mewah.
+                        Sarjana Akutansi dengan pengalaman lebih dari 20 tahun di bidang Administrasi
                     </p>
                 </div>
 

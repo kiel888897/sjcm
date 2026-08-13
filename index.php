@@ -57,8 +57,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     for Better Building Future
                 </h1>
                 <p class="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-                    Layanan konsultasi arsitektur, struktur, MEP, PBG, SLF dan pengawasan konstruksi
-                    dengan standar profesional.
+                    Layanan konsultasi arsitektur, struktur, MEP, manajemen konstruksi, estimasi biaya RaB, PBG, SLF dan pengawasan konstruksi dengan standar profesional.
                 </p>
                 <div class="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
                     <a href="contact.php" class="w-full sm:w-auto text-center bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold shadow-sm hover:bg-blue-800 transition">
@@ -588,28 +587,28 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
 
                 <div class="
-            group
-            bg-white
-            rounded-2xl
-            p-7
-            border
-            hover:shadow-xl
-            transition
-            ">
+                    group
+                    bg-white
+                    rounded-2xl
+                    p-7
+                    border
+                    hover:shadow-xl
+                    transition
+                    ">
 
 
                     <div class="
-                w-14
-                h-14
-                rounded-xl
-                bg-blue-900
-                text-white
-                flex
-                items-center
-                justify-center
-                text-2xl
-                mb-5
-                ">
+                        w-14
+                        h-14
+                        rounded-xl
+                        bg-blue-900
+                        text-white
+                        flex
+                        items-center
+                        justify-center
+                        text-2xl
+                        mb-5
+                        ">
 
                         <i class="fa-solid fa-magnifying-glass-chart"></i>
 
@@ -635,29 +634,27 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 <!-- Review -->
 
 
-                <div class="
-            group
-            bg-white
-            rounded-2xl
-            p-7
-            border
-            hover:shadow-xl
-            transition
-            ">
+                <div class="group bg-white
+                    rounded-2xl
+                    p-7
+                    border
+                    hover:shadow-xl
+                    transition
+                    ">
 
 
                     <div class="
-                w-14
-                h-14
-                rounded-xl
-                bg-blue-900
-                text-white
-                flex
-                items-center
-                justify-center
-                text-2xl
-                mb-5
-                ">
+                        w-14
+                        h-14
+                        rounded-xl
+                        bg-blue-900
+                        text-white
+                        flex
+                        items-center
+                        justify-center
+                        text-2xl
+                        mb-5
+                        ">
 
                         <i class="fa-solid fa-list-check"></i>
 
@@ -676,18 +673,141 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
 
                 </div>
+                <!-- tambahan  -->
+
+                <div class="group bg-white
+                    rounded-2xl
+                    p-7
+                    border
+                    hover:shadow-xl
+                    transition
+                    ">
+
+
+                    <div class="
+                        w-14
+                        h-14
+                        rounded-xl
+                        bg-blue-900
+                        text-white
+                        flex
+                        items-center
+                        justify-center
+                        text-2xl
+                        mb-5
+                        ">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold">
+                        Manajemen Konstruksi
+                    </h3>
+
+
+                    <p class="mt-3 text-gray-600 text-sm">
+                        Perencanaan, pengawasan,
+                        dan koordinasi proyek konstruksi.
+                    </p>
+
+
+                </div>
+                <div class="group bg-white
+                    rounded-2xl
+                    p-7
+                    border
+                    hover:shadow-xl
+                    transition
+                    ">
+
+
+                    <div class="
+                        w-14
+                        h-14
+                        rounded-xl
+                        bg-blue-900
+                        text-white
+                        flex
+                        items-center
+                        justify-center
+                        text-2xl
+                        mb-5
+                        ">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold">
+                        Estimator
+                    </h3>
+
+
+                    <p class="mt-3 text-gray-600 text-sm">
+                        Estimasi biaya konstruksi
+                        dan perencanaan anggaran.
+                    </p>
+
+
+                </div>
+                <div class="group bg-white
+                    rounded-2xl
+                    p-7
+                    border
+                    hover:shadow-xl
+                    transition
+                    ">
+
+
+                    <div class="
+                        w-14
+                        h-14
+                        rounded-xl
+                        bg-blue-900
+                        text-white
+                        flex
+                        items-center
+                        justify-center
+                        text-2xl
+                        mb-5
+                        ">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold">
+                        Quantity Surveyor
+                    </h3>
+
+
+                    <p class="mt-3 text-gray-600 text-sm">
+                        Pengukuran kuantitas bahan
+                        dan analisis biaya konstruksi.
+                    </p>
+
+
+                </div>
+
 
 
             </div>
 
 
+        </div>
 
-            <!-- Button -->
 
-            <div class="text-center mt-12">
 
-                <a href="services.php"
-                    class="
+        <!-- Button -->
+
+        <div class="text-center mt-12">
+
+            <a href="services.php"
+                class="
             bg-blue-900
             text-white
             px-8
@@ -697,10 +817,10 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             hover:bg-blue-800
             transition
             ">
-                    View Details Services →
-                </a>
+                View Details Services →
+            </a>
 
-            </div>
+        </div>
 
 
         </div>
