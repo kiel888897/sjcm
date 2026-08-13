@@ -393,14 +393,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
 
                 </div>
-
-
-
-
-
                 <!-- Structure -->
-
-
                 <div class="
             group
             bg-white
@@ -444,14 +437,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
 
                 </div>
-
-
-
-
-
                 <!-- MEP -->
-
-
                 <div class="
             group
             bg-white
@@ -463,8 +449,6 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             hover:shadow-xl
             transition
             ">
-
-
                     <div class="
                 w-14
                 h-14

@@ -145,7 +145,7 @@ bg-white/20
 
                 <div>
                     <p class="text-gray-600 leading-relaxed">
-                        PT Sinergi Jaya Cipta Mandiri berdiri adalah perusahaan berbadan hukum yang telah berdiri pada tahun 2025 di Denpasar, Bali.
+                        PT Sinergi Jaya Cipta Mandiri adalah perusahaan berbadan hukum yang telah berdiri pada tahun 2025 di Denpasar, Bali.
                         Didirikan oleh para profesional dengan pengalaman panjang di bidang teknik dan administrasi.
                         Perusahaan bergerak di bidang perencanaan, pengawasan arsitektur, struktur, mechanical electrical plumbing,perijinan PBG, dan SLF.
                     </p>
