@@ -697,7 +697,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                         mb-5
                         ">
 
-                        <i class="fa-solid fa-list-check"></i>
+                        <i class="fa-solid fa-hard-hat"></i>
 
                     </div>
 
@@ -736,7 +736,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                         mb-5
                         ">
 
-                        <i class="fa-solid fa-list-check"></i>
+                        <i class="fa-solid fa-calculator"></i>
 
                     </div>
 
@@ -775,7 +775,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                         mb-5
                         ">
 
-                        <i class="fa-solid fa-list-check"></i>
+                        <i class="fa-solid fa-ruler-combined"></i>
 
                     </div>
 

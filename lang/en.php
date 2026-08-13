@@ -40,6 +40,8 @@ return [
     "footer_architecture" => "Architecture",
     "footer_structure" => "Structure",
     "footer_mep" => "MEP Engineering",
+    "footer_construction_management" => "Construction Management",
+    "footer_cost_estimation" => "Cost Estimation RAB",
     "footer_pbg_slf" => "PBG & SLF",
     "footer_follow" => "Follow Us",
     "footer_connect" => "Connect with SJCM",

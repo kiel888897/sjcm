@@ -37,55 +37,6 @@ if (!isset($text) || !is_array($text)) {
             <p class="text-gray-300 leading-relaxed text-sm">
                 <?php echo $text['footer_description']; ?>
             </p>
-            <!-- <ul class="
-space-y-4
-text-gray-300
-text-sm
-">
-
-
-                <li>
-                    <a href="about.php"
-                        class="hover:text-white transition">
-
-                        About Us
-
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="team.php"
-                        class="hover:text-white transition">
-
-                        Our Team
-
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="projects.php"
-                        class="hover:text-white transition">
-
-                        Projects
-
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="contact.php"
-                        class="hover:text-white transition">
-
-                        Contact
-
-                    </a>
-                </li>
-
-
-            </ul> -->
-
 
         </div>
 
@@ -106,6 +57,14 @@ text-sm
                 <li>
                     <i class="fa-solid fa-gears mr-2 text-blue-300"></i>
                     <?php echo $text['footer_mep']; ?>
+                </li>
+                <li>
+                    <i class="fa-solid fa-hard-hat mr-2 text-blue-300"></i>
+                    <?php echo $text['footer_construction_management']; ?>
+                </li>
+                <li>
+                    <i class="fa-solid fa-calculator mr-2 text-blue-300"></i>
+                    <?php echo $text['footer_cost_estimation']; ?>
                 </li>
                 <li>
                     <i class="fa-solid fa-file-signature mr-2 text-blue-300"></i>

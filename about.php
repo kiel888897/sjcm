@@ -159,7 +159,7 @@ bg-white/20
                 </div>
 
                 <div>
-                    <img src="assets/images/hero-building1.jpg" class="rounded-3xl shadow-lg" alt="SJCM Office Building">
+                    <img src="assets/images/aboutsjcm.jpg" class="rounded-3xl shadow-lg" alt="SJCM Office Building">
                 </div>
 
             </div>
@@ -239,51 +239,75 @@ bg-white/20
 
             <div class="grid md:grid-cols-4 gap-3">
 
-                <!-- Founder / Director -->
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
                     <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
                         <i class="fa-solid fa-compass-drafting"></i>
                     </div>
-                    <h3 class="text-xl font-bold mt-6">I Gede Suarjana S.T</h3>
+                    <button type="button"
+                        class="mt-6 text-xl font-bold text-gray-900 hover:text-blue-700 transition"
+                        data-name="I Gede Suarjana S.T"
+                        data-role="Arsitek & Direktur"
+                        data-certificate="assets/images/team/skk-igede.jpg"
+                        data-certificate-skn="assets/images/team/skn-igede.jpg">
+                        I Gede Suarjana S.T
+                    </button>
                     <p class="text-blue-700 font-semibold mt-1">Arsitek & Direktur</p>
                     <p class="mt-3 text-gray-600 text-sm">
                         Sarjana Arsitek dengan pengalaman lebih dari 10 tahun di bidang Arsitektur, Interior dan lansekap
                     </p>
                 </div>
 
-                <!-- Engineering Team Example -->
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
                     <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
-                        <i class="fa-solid fa-compass-drafting"></i>
+                        <i class="fa-solid fa-helmet-safety"></i>
                     </div>
-                    <!-- <img src="assets/images/team/engineer1.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer"> -->
-                    <h3 class="text-xl font-bold mt-6">Ir. Marlon Simanjuntak ST.,MT.,IPM</h3>
-                    <p class="text-blue-700 font-semibold mt-1"> Insinyur Struktur & Direktur</p>
+                    <button type="button"
+                        class="mt-6 text-xl font-bold text-gray-900 hover:text-blue-700 transition"
+                        data-name="Ir. Marlon Simanjuntak ST.,MT.,IPM"
+                        data-role="Insinyur Struktur & Direktur"
+                        data-certificate="assets/images/team/skk-marlon.jpg"
+                        data-certificate-skn="assets/images/team/skn-marlon.jpg">
+                        Ir. Marlon Simanjuntak ST.,MT.,IPM
+                    </button>
+                    <p class="text-blue-700 font-semibold mt-1">Insinyur Struktur & Direktur</p>
                     <p class="mt-3 text-gray-600 text-sm">
-                        SarjanaTeknik Sipil dengan pengalaman lebih dari 10 tahun di bidang Perencanaan Struktur, Estimasi dan Manajemen Konstruksi
+                        Sarjana Teknik Sipil dengan pengalaman lebih dari 10 tahun di bidang Perencanaan Struktur, Estimasi dan Manajemen Konstruksi
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
                     <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
-                        <i class="fa-solid fa-compass-drafting"></i>
+                        <i class="fa-solid fa-plug-circle-bolt"></i>
                     </div>
-                    <!-- <img src="assets/images/team/engineer2.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer"> -->
-                    <h3 class="text-xl font-bold mt-6">Fajar ST</h3>
+                    <button type="button"
+                        class="mt-6 text-xl font-bold text-gray-900 hover:text-blue-700 transition"
+                        data-name="Fajar ST"
+                        data-role="Insinyur MEP & Komisaris"
+                        data-certificate="assets/images/team/skk-fajar.jpg"
+                        data-certificate-skn="assets/images/team/skn-fajar.jpg">
+                        Fajar ST
+                    </button>
                     <p class="text-blue-700 font-semibold mt-1">Insinyur MEP & Komisaris</p>
                     <p class="mt-3 text-gray-600 text-sm">
-                        SarjanaTeknik Elektro dengan pengalaman lebih dari 10 tahun di bidang Perencanaan MEP, dan Estimasi.
+                        Sarjana Teknik Elektro dengan pengalaman lebih dari 10 tahun di bidang Perencanaan MEP, dan Estimasi.
                     </p>
                 </div>
+
                 <div class="bg-white rounded-2xl p-6 text-center shadow-lg">
                     <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-100 text-4xl text-blue-900 shadow-inner">
-                        <i class="fa-solid fa-compass-drafting"></i>
+                        <i class="fa-solid fa-user-gear"></i>
                     </div>
-                    <!-- <img src="assets/images/team/engineer2.jpg" class="mx-auto rounded-full h-48 w-48 object-cover" alt="Engineer"> -->
-                    <h3 class="text-xl font-bold mt-6">Anis SE</h3>
+                    <button type="button"
+                        class="mt-6 text-xl font-bold text-gray-900 hover:text-blue-700 transition"
+                        data-name="Anis SE"
+                        data-role="Admin & Komisaris"
+                        data-certificate="assets/images/team/skk-anis.jpg"
+                        data-certificate-skn="assets/images/team/skn-anis.jpg">
+                        Anis SE
+                    </button>
                     <p class="text-blue-700 font-semibold mt-1">Admin & Komisaris</p>
                     <p class="mt-3 text-gray-600 text-sm">
-                        Sarjana Akutansi dengan pengalaman lebih dari 20 tahun di bidang Administrasi
+                        Sarjana Akuntansi dengan pengalaman lebih dari 20 tahun di bidang Administrasi.
                     </p>
                 </div>
 
@@ -292,6 +316,28 @@ bg-white/20
         </div>
 
     </section>
+
+    <div id="teamModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4">
+        <div class="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl">
+            <button type="button" id="closeTeamModal" class="absolute right-4 top-4 text-2xl text-gray-500 hover:text-gray-800 focus:outline-none" aria-label="Close">
+                &times;
+            </button>
+            <div class="text-center">
+                <h3 id="teamModalName" class="text-2xl font-bold text-gray-900">Nama</h3>
+                <p id="teamModalRole" class="mt-2 text-sm font-semibold uppercase tracking-[3px] text-blue-700">Jabatan</p>
+            </div>
+            <div class="mt-6 space-y-5">
+
+                <div class="overflow-hidden rounded-2xl border border-blue-100 bg-blue-50 p-3">
+                    <img id="teamModalCertImage" src="assets/images/team/skk-nama.jpg" alt="Sertifikat" class="w-full h-auto rounded-xl object-contain bg-white" onerror="this.onerror=null;this.src='assets/images/team/skk-nama.jpg';" />
+                </div>
+
+                <div class="overflow-hidden rounded-2xl border border-blue-100 bg-blue-50 p-3">
+                    <img id="teamModalCertImageSkn" src="assets/images/team/skn-nama.jpg" alt="Sertifikat tambahan" class="w-full h-auto rounded-xl object-contain bg-white" onerror="this.onerror=null;this.src='assets/images/team/skn-nama.jpg';" />
+                </div>
+            </div>
+        </div>
+    </div>
 
     <?php include 'footer.php' ?>
     <script src="js/main.js"></script>

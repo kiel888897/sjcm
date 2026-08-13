@@ -139,7 +139,7 @@ space-y-12
 ">
 
 
-            <!-- Architecture -->
+            <!-- PROJECT 1 -->
 
             <div
                 class="
@@ -257,7 +257,7 @@ space-y-12
                     font-bold
                     mt-3
                     ">
-                        judul
+                        Proyek 1
                     </h2>
 
 
@@ -268,7 +268,8 @@ space-y-12
                         leading-relaxed
                         ">
 
-                        Deskripsi Architecture
+                        Deskripsi proyek 1 yang mencerminkan
+                        kemampuan kami dalam perencanaan.
 
                     </p>
 
@@ -295,7 +296,7 @@ space-y-12
 
                         <p>
                             <i class="fa-solid fa-layer-group text-blue-900 mr-2"></i>
-                            Architecture
+                            Architecture | Structure | MEP
                         </p>
 
 
@@ -314,7 +315,7 @@ space-y-12
             </div>
 
 
-            <!-- Structure -->
+            <!-- PROJECT 2 -->
 
             <div
                 class="
@@ -444,7 +445,7 @@ space-y-12
                     font-bold
                     mt-3
                     ">
-                        judul/title
+                        Proyek 2
                     </h2>
 
 
@@ -455,7 +456,8 @@ space-y-12
                         leading-relaxed
                         ">
 
-                        Deskripsi Structure
+                        Deskripsi proyek 2 yang mencerminkan
+                        kemampuan kami dalam perencanaan.
 
                     </p>
 
@@ -501,85 +503,6 @@ space-y-12
             </div>
 
 
-
-            <!-- MEP -->
-
-            <div
-                class="
-                project-item
-                bg-white
-                rounded-3xl
-                shadow-lg
-                overflow-hidden
-                grid
-                md:grid-cols-2
-                "
-                data-category="mep">
-
-                <div class="relative overflow-hidden">
-
-                    <img
-                        src="assets/images/projects/MEP1.jpg"
-                        class="project-slide w-full h-full object-cover absolute transition duration-700"
-                        onerror="this.src='assets/images/projects/project1-1.jpg'">
-
-                    <img
-                        src="assets/images/projects/MEP2.jpg"
-                        class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700"
-                        onerror="this.src='assets/images/projects/project1-2.jpg'">
-
-                    <img
-                        src="assets/images/projects/MEP3.jpg"
-                        class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700"
-                        onerror="this.src='assets/images/projects/project1-3.jpg'">
-
-                    <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 bg-white/80 w-10 h-10 rounded-full">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-
-                    <button onclick="nextSlide(this)" class="absolute right-5 top-1/2 bg-white/80 w-10 h-10 rounded-full">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
-
-                </div>
-
-                <div class="p-10">
-                    <p class="text-blue-700 uppercase tracking-widest text-sm font-semibold">
-                        MEP
-                    </p>
-
-                    <h2 class="text-3xl font-bold mt-3">
-                        judul/title
-                    </h2>
-
-                    <p class="mt-5 text-gray-600 leading-relaxed">
-                        deskripsi MEP
-                    </p>
-
-                    <div class="mt-8 space-y-3 text-gray-700">
-                        <p>
-                            <i class="fa-solid fa-location-dot text-blue-900 mr-2"></i>
-                            Bali
-                        </p>
-
-                        <p>
-                            <i class="fa-solid fa-calendar text-blue-900 mr-2"></i>
-                            2026
-                        </p>
-
-                        <p>
-                            <i class="fa-solid fa-layer-group text-blue-900 mr-2"></i>
-                            MEP
-                        </p>
-
-                        <ul class="mt-5 space-y-2 text-sm text-gray-700">
-                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Electrical system design</li>
-                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Plumbing and drainage planning</li>
-                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>HVAC and ventilation coordination</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
         </div>
 

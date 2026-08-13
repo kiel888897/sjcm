@@ -541,6 +541,159 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 </div>
 
 
+                <!-- MANAGEMEN KONSTRUKSI -->
+
+                <div class="
+        p-8
+        rounded-3xl
+        border
+        hover:shadow-xl
+        transition
+        bg-gray-50
+        ">
+
+
+                    <div class="flex gap-5">
+
+
+                        <div class="
+        w-16 h-16
+        bg-blue-900
+        text-white
+        rounded-2xl
+        flex items-center
+        justify-center
+        text-2xl
+        ">
+
+                            <i class="fa-solid fa-hard-hat"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-2xl font-bold">
+                                Manajemen Konstruksi
+                            </h3>
+
+
+                            <p class="mt-3 text-gray-600">
+                                Perencanaan, pengawasan, dan koordinasi proyek
+                                konstruksi agar pelaksanaan berjalan efisien dan tepat sasaran.
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ESTIMATOR -->
+
+                <div class="
+        p-8
+        rounded-3xl
+        border
+        hover:shadow-xl
+        transition
+        bg-gray-50
+        ">
+
+
+                    <div class="flex gap-5">
+
+
+                        <div class="
+        w-16 h-16
+        bg-blue-900
+        text-white
+        rounded-2xl
+        flex items-center
+        justify-center
+        text-2xl
+        ">
+
+                            <i class="fa-solid fa-calculator"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-2xl font-bold">
+                                Estimator
+                            </h3>
+
+
+                            <p class="mt-3 text-gray-600">
+                                Estimasi biaya konstruksi dan penyusunan anggaran
+                                agar proyek dapat direncanakan secara akurat dan efisien.
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- QUANTITY SURVEYOR -->
+
+                <div class="
+        p-8
+        rounded-3xl
+        border
+        hover:shadow-xl
+        transition
+        bg-gray-50
+        ">
+
+
+                    <div class="flex gap-5">
+
+
+                        <div class="
+        w-16 h-16
+        bg-blue-900
+        text-white
+        rounded-2xl
+        flex items-center
+        justify-center
+        text-2xl
+        ">
+
+                            <i class="fa-solid fa-ruler-combined"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3 class="text-2xl font-bold">
+                                Quantity Surveyor
+                            </h3>
+
+
+                            <p class="mt-3 text-gray-600">
+                                Pengukuran kuantitas bahan dan analisis biaya
+                                konstruksi untuk mendukung perencanaan serta pengendalian anggaran.
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
 
 
 

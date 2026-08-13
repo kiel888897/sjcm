@@ -35,11 +35,13 @@ return [
 
     // Footer
     "footer_company" => "Perusahaan",
-    "footer_description" => "PT Sinergi Jaya Cipta Mandiri menyediakan layanan konsultasi engineering meliputi Architecture, Structure, MEP, PBG, dan SLF.",
+    "footer_description" => "PT Sinergi Jaya Cipta Mandiri menyediakan layanan konsultasi arsitektur, struktur, MEP, manajemen konstruksi, Estimasi biaya RaB, PBG, SLF dan pengawasan konstruksi dengan standar profesional.",
     "footer_services" => "Layanan",
     "footer_architecture" => "Arsitektur",
     "footer_structure" => "Struktur",
     "footer_mep" => "Engineering MEP",
+    "footer_construction_management" => "Manajemen Konstruksi",
+    "footer_cost_estimation" => "Estimasi Biaya RAB",
     "footer_pbg_slf" => "PBG & SLF",
     "footer_follow" => "Ikuti Kami",
     "footer_connect" => "Terhubung dengan SJCM",
