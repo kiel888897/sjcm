@@ -318,7 +318,7 @@ bg-white/20
     </section>
 
     <div id="teamModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/55 p-4">
-        <div class="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl">
+        <div class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white p-6 shadow-2xl">
             <button type="button" id="closeTeamModal" class="absolute right-4 top-4 text-2xl text-gray-500 hover:text-gray-800 focus:outline-none" aria-label="Close">
                 &times;
             </button>
@@ -326,14 +326,14 @@ bg-white/20
                 <h3 id="teamModalName" class="text-2xl font-bold text-gray-900">Nama</h3>
                 <p id="teamModalRole" class="mt-2 text-sm font-semibold uppercase tracking-[3px] text-blue-700">Jabatan</p>
             </div>
-            <div class="mt-6 space-y-5">
+            <div class="mt-6 grid md:grid-cols-2 gap-4">
 
-                <div class="overflow-hidden rounded-2xl border border-blue-100 bg-blue-50 p-3">
-                    <img id="teamModalCertImage" src="assets/images/team/skk-nama.jpg" alt="Sertifikat" class="w-full h-auto rounded-xl object-contain bg-white" onerror="this.onerror=null;this.src='assets/images/team/skk-nama.jpg';" />
+                <div class="overflow-hidden rounded-2xl border border-blue-100 bg-blue-50">
+                    <img id="teamModalCertImage" src="assets/images/team/skk-nama.jpg" alt="Sertifikat" class="w-full h-auto max-h-96 rounded-xl object-contain bg-white" onerror="this.onerror=null;this.src='assets/images/team/skk-nama.jpg';" />
                 </div>
 
-                <div class="overflow-hidden rounded-2xl border border-blue-100 bg-blue-50 p-3">
-                    <img id="teamModalCertImageSkn" src="assets/images/team/skn-nama.jpg" alt="Sertifikat tambahan" class="w-full h-auto rounded-xl object-contain bg-white" onerror="this.onerror=null;this.src='assets/images/team/skn-nama.jpg';" />
+                <div class="overflow-hidden rounded-2xl border border-blue-100 bg-blue-50">
+                    <img id="teamModalCertImageSkn" src="assets/images/team/skn-nama.jpg" alt="Sertifikat tambahan" class="w-full h-auto max-h-96 rounded-xl object-contain bg-white" onerror="this.onerror=null;this.src='assets/images/team/skn-nama.jpg';" />
                 </div>
             </div>
         </div>
