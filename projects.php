@@ -86,8 +86,23 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 <!-- SLIDER -->
                 <div class="relative overflow-hidden h-72 md:h-96 lg:h-[520px]">
                     <img src="assets/images/projects/arsitektur/ar1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700">
-                    <img src="assets/images/projects/arsitektur/ar2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700">
-                    <img src="assets/images/projects/arsitektur/ar3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700">
+                    <img src="assets/images/projects/arsitektur/ar2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar4.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar5.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar6.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar7.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar8.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar9.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar10.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar11.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar12.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar13.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar14.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar15.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar16.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar17.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                    <img src="assets/images/projects/arsitektur/ar18.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
                     <!-- Buttons -->
                     <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -121,8 +136,18 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 <!-- SLIDER -->
                 <div class="relative overflow-hidden h-72 md:h-96 lg:h-[520px]">
                     <img src="assets/images/projects/struktur/st1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700">
-                    <img src="assets/images/projects/struktur/st2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700">
-                    <img src="assets/images/projects/struktur/st3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700">
+                    <img src="assets/images/projects/struktur/st2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st4.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st5.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st6.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st7.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st8.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st9.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st10.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st11.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st12.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st13.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
                     <!-- Buttons -->
                     <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                         <i class="fa-solid fa-chevron-left"></i>
