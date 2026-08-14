@@ -69,11 +69,11 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 Architecture
             </button>
             <button
-                data-filter="structure" class="filter-btn px-6 y-2 rounded-full order">
+                data-filter="structure" class="filter-btn px-6 py-2 rounded-full border">
                 Structure
             </button>
             <button
-                data-filter="mep" class="filter-btn x-6 py-2 rounded-full border">
+                data-filter="mep" class="filter-btn px-6 py-2 rounded-full border">
                 MEP
             </button>
         </div>
@@ -84,7 +84,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             <!-- Architecture -->
             <div class="project-item bg-white rounded-3xl shadow-lg overflow-hidden grid md:grid-cols-2" data-category="residential architecture">
                 <!-- SLIDER -->
-                <div class="relative overflow-hidden h-72 md:h-96 lg:h-[520px]">
+                <div class="relative overflow-hidden h-72 md:h-96 lg:h-[450px ]">
                     <img src="assets/images/projects/arsitektur/ar1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700">
                     <img src="assets/images/projects/arsitektur/ar2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
                     <img src="assets/images/projects/arsitektur/ar3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
@@ -110,7 +110,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     <button onclick="nextSlide(this)" class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
-                    <button onclick="openModal(this)" class="absolute right-16 top-5 bg-white/80 w-10 h-10 rounded-full" title="Lihat foto besar">
+                    <button onclick="openModal(this)" class="absolute right-3 md:right-16 top-5 bg-white/80 w-10 h-10 rounded-full" title="Lihat foto besar">
                         <i class="fa-solid fa-expand"></i>
                     </button>
                 </div>
@@ -134,7 +134,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             <!-- Structure -->
             <div class="project-item bg-white rounded-3xl shadow-lg overflow-hidden grid md:grid-cols-2" data-category="structure">
                 <!-- SLIDER -->
-                <div class="relative overflow-hidden h-72 md:h-96 lg:h-[520px]">
+                <div class="relative overflow-hidden h-72 md:h-96 lg:h-[450px ]">
                     <img src="assets/images/projects/struktur/st1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700">
                     <img src="assets/images/projects/struktur/st2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
                     <img src="assets/images/projects/struktur/st3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
@@ -155,7 +155,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     <button onclick="nextSlide(this)" class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
-                    <button onclick="openModal(this)" class="absolute right-16 top-5 bg-white/80 w-10 h-10 rounded-full" title="Lihat foto besar">
+                    <button onclick="openModal(this)" class="absolute right-3 md:right-16 top-5 bg-white/80 w-10 h-10 rounded-full" title="Lihat foto besar">
                         <i class="fa-solid fa-expand"></i>
                     </button>
                 </div>
@@ -179,7 +179,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             <!-- MEP -->
             <div class="project-item bg-white rounded-3xl shadow-lg overflow-hidden grid md:grid-cols-2" data-category="mep">
                 <!-- slider      -->
-                <div class="relative overflow-hidden h-72 md:h-96 lg:h-[520px]">
+                <div class="relative overflow-hidden h-72 md:h-96 lg:h-[450px ]">
                     <img src="assets/images/projects/mep/me1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700" onerror="this.src='assets/images/projects/project1-1.jpg'">
                     <img src="assets/images/projects/mep/me2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-2.jpg'">
                     <img src="assets/images/projects/mep/me3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-3.jpg'">
@@ -194,7 +194,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     <button onclick="nextSlide(this)" class="absolute right-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
-                    <button onclick="openModal(this)" class="absolute right-16 top-5 bg-white/80 w-10 h-10 rounded-full" title="Lihat foto besar">
+                    <button onclick="openModal(this)" class="absolute right-3 md:right-16 top-5 bg-white/80 w-10 h-10 rounded-full" title="Lihat foto besar">
                         <i class="fa-solid fa-expand"></i>
                     </button>
                 </div>
@@ -229,11 +229,11 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 <button onclick="modalPrev()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 w-10 h-10 rounded-full z-50">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <button onclick="modalNext()" class="absolute right-20 top-1/2 -translate-y-1/2 bg-white/90 w-10 h-10 rounded-full z-50">
+                <button onclick="modalNext()" class="absolute right-4 md:right-16 top-1/2 -translate-y-1/2 bg-white/90 w-10 h-10 rounded-full z-50">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
                 <img id="modalImage" src="" alt="" class="w-full h-auto object-contain bg-black">
-                <div id="modalCaption" class="p-4 text-gray-700"></div>
+                <!-- <div id="modalCaption" class="p-4 text-gray-700"></div> -->
             </div>
         </div>
     </div>
@@ -395,7 +395,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
             const modal = document.getElementById('imageModal');
             document.getElementById('modalImage').src = modalSlides[modalIndex] || '';
-            document.getElementById('modalCaption').innerText = caption;
+            // document.getElementById('modalCaption').innerText = caption;
             modal.classList.remove('hidden');
             // focus to capture keyboard
             modal.focus && modal.focus();
@@ -417,7 +417,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             const modal = document.getElementById('imageModal');
             modal.classList.add('hidden');
             document.getElementById('modalImage').src = '';
-            document.getElementById('modalCaption').innerText = '';
+            // document.getElementById('modalCaption').innerText = '';
         }
 
         // Tutup modal saat klik di luar konten
