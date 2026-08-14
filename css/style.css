@@ -164,3 +164,15 @@ width:100%;
 color:#082f63;
 
 }
+
+/* Modal image styles */
+#imageModal img{
+    max-height: 90vh;
+    width: 100%;
+    display: block;
+    background: #000;
+}
+
+#imageModal #modalCaption{
+    background: #fff;
+}
