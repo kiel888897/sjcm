@@ -197,7 +197,7 @@ bg-white/20
                     <ul class="mt-4 space-y-3 text-gray-700 leading-relaxed">
                         <li class="flex gap-3">
                             <span class="text-blue-700 mt-1">•</span>
-                            <span>Memberikan pelayanan yang pterbaik untuk setiap klien.</span>
+                            <span>Memberikan pelayanan yang terbaik untuk setiap klien.</span>
                         </li>
                         <li class="flex gap-3">
                             <span class="text-blue-700 mt-1">•</span>

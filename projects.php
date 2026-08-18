@@ -49,7 +49,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 Our Portfolio
             </p>
             <h1 class="mt-5 text-5xl md:text-6xl font-bold leading-tight">
-                Engineering Projects
+                Arsitek & Konsultan Teknik
             </h1>
             <p class="mt-6 max-w-2xl mx-auto text-blue-100 text-lg leading-relaxed">
                 Dokumentasi proyek yang mencerminkan kemampuan kami dalam perencanaan, desain, pengecekan dan pengawasan konstruksi.
@@ -102,7 +102,6 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     <img src="assets/images/projects/arsitektur/ar15.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
                     <img src="assets/images/projects/arsitektur/ar16.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
                     <img src="assets/images/projects/arsitektur/ar17.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                    <img src="assets/images/projects/arsitektur/ar18.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
                     <!-- Buttons -->
                     <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                         <i class="fa-solid fa-chevron-left"></i>
@@ -148,6 +147,8 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     <img src="assets/images/projects/struktur/st11.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
                     <img src="assets/images/projects/struktur/st12.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
                     <img src="assets/images/projects/struktur/st13.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                    <img src="assets/images/projects/struktur/st14.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+
                     <!-- Buttons -->
                     <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                         <i class="fa-solid fa-chevron-left"></i>

@@ -69,10 +69,14 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 </div>
             </div>
             <div class="relative hero-float hidden md:block">
-                <img src="assets/images/hero-building.jpg"
+                <video
+                    src="assets/hero.mp4"
                     class="w-full h-[280px] sm:h-[360px] md:h-[420px] object-cover rounded-3xl shadow-2xl shadow-blue-950/20 transition-transform duration-700 hover:scale-[1.02]"
-                    alt="SJCM Engineering Consultant">
-                <div class="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-900/60 to-cyan-900/50 rounded-3xl"></div>
+                    autoplay
+                    muted
+                    loop
+                    playsinline></video>
+                <!-- <div class="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-900/60 to-cyan-900/50 rounded-3xl"></div> -->
                 <div class="absolute bottom-10 left-10 text-white max-w-md">
                     <p class="text-sm uppercase tracking-[4px] mb-4 text-blue-200">
                         Engineering Consultant

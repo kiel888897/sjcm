@@ -579,8 +579,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
 
                             <p class="mt-3 text-gray-600">
-                                Perencanaan, pengawasan, dan koordinasi proyek
-                                konstruksi agar pelaksanaan berjalan efisien dan tepat sasaran.
+                                Perencanaan, pengawasan, dan koordinasi proyek konstruksi yang Efektif dan Efisien dalam Biaya, Pengendalian Mutu dan waktu Pekerjaan, Pencapaian Target SMK-3, dan Konstruksi Ramah Lingkungan.
                             </p>
 
 
@@ -631,8 +630,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
 
                             <p class="mt-3 text-gray-600">
-                                Estimasi biaya konstruksi dan penyusunan anggaran
-                                agar proyek dapat direncanakan secara akurat dan efisien.
+                                Estimasi biaya konstruksi dan Penyusunan anggaran proyek yang akurat, sehingga pelaksanaan proyek dapat berjalan dengan Tepat, lancar dan Sukses.
                             </p>
 
 
@@ -683,8 +681,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
 
                             <p class="mt-3 text-gray-600">
-                                Pengukuran kuantitas bahan dan analisis biaya
-                                konstruksi untuk mendukung perencanaan serta pengendalian anggaran.
+                                Pengukuran kuantitas Pekerjaan dan Analisis biaya konstruksi untuk mendukung perencanaan, pelaksanaan serta pengendalian anggaran biaya Proyek.
                             </p>
 
 
