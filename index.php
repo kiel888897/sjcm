@@ -47,7 +47,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
     <!-- HERO PLACEHOLDER -->
     <section class="pt-24 pb-16 sm:pt-28 sm:pb-20 min-h-[75vh] flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
+        <div class="pt-5 max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
             <div>
                 <p class="text-blue-700 font-semibold tracking-widest uppercase mb-4 text-sm sm:text-base">
                     Construction & Consulting Services
