@@ -82,7 +82,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     <i class="fa-solid fa-play"></i>
                 </button>
                 <div class="absolute bottom-5 left-10 text-white max-w-md z-10">
-                    <p class="text-sm uppercase tracking-[4px] mb-4 text-blue-200">
+                    <p class="text-sm uppercase tracking-[4px] mb-1 text-blue-200">
                         Arsitek dan Konsultan Teknik
                     </p>
                 </div>
