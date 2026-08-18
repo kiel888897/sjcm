@@ -14,7 +14,7 @@ require "config/language.php";
 
 
     <title>
-        PT Sinergi Jaya Cipta Mandiri | Engineering Consultant Bali
+        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
     </title>
 
 
@@ -79,7 +79,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 <!-- <div class="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-900/60 to-cyan-900/50 rounded-3xl"></div> -->
                 <div class="absolute bottom-10 left-10 text-white max-w-md">
                     <p class="text-sm uppercase tracking-[4px] mb-4 text-blue-200">
-                        Engineering Consultant
+                        Arsitek dan Konsultan Teknik
                     </p>
                 </div>
             </div>
@@ -124,7 +124,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
 
                     <img
                         src="assets/images/about-engineering.jpg"
-                        alt="PT Sinergi Jaya Cipta Mandiri Engineering Consultant"
+                        alt="PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik"
                         class="
                 w-full
                 h-[280px]

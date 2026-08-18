@@ -11,7 +11,7 @@ return [
 
     "about_page_title" => "About Us",
     "about_page_heading" => "PT Sinergi Jaya Cipta Mandiri",
-    "about_page_subtitle" => "Professional Engineering Consultant From Bali.",
+    "about_page_subtitle" => "Professional Arsitek dan Konsultan Teknik From Bali.",
     "contact_page_title" => "Contact Us",
     "contact_page_heading" => "Get In Touch With SJCM",
     "contact_page_subtitle" => "Reach out to us for project consultation and professional technical services.",
@@ -31,7 +31,7 @@ return [
     "contact_form_button" => "Send Message",
 
     "company" => "PT Sinergi Jaya Cipta Mandiri",
-    "tagline" => "Engineering Consultant",
+    "tagline" => "Arsitek dan Konsultan Teknik",
 
     // Footer
     "footer_company" => "Company",

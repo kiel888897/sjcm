@@ -9,7 +9,7 @@
 
 
     <title>
-        PT Sinergi Jaya Cipta Mandiri | Engineering Consultant Bali
+        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
     </title>
 
 

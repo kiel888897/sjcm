@@ -12,7 +12,7 @@ require "config/language.php";
 
 
     <title>
-        PT Sinergi Jaya Cipta Mandiri | Engineering Consultant Bali
+        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
     </title>
 
 
@@ -107,7 +107,7 @@ md:text-6xl
 font-bold
 leading-tight
 ">
-                <?= $text['about_page_heading'] ?? 'Professional Engineering Consultant From Bali'; ?>
+                <?= $text['about_page_heading'] ?? 'Professional Arsitek dan Konsultan Teknik From Bali'; ?>
             </h1>
 
             <p class="

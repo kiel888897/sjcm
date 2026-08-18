@@ -88,7 +88,7 @@ font-medium
 tracking-wide
 ">
 
-                        Engineering Consultant
+                        Arsitek dan Konsultan Teknik
 
                     </p>
 
