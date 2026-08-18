@@ -70,7 +70,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
             </div>
             <div class="relative hero-float hidden md:block">
                 <video
-                    src="assets/hero.mp4"
+                    src="assets/hero2.mp4"
                     class="w-full h-[280px] sm:h-[360px] md:h-[420px] object-cover rounded-3xl shadow-2xl shadow-blue-950/20 transition-transform duration-700 hover:scale-[1.02]"
                     autoplay
                     muted
