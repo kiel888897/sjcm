@@ -46,7 +46,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
     <?php include 'navbar.php'; ?>
 
     <!-- HERO PLACEHOLDER -->
-    <section class="pt-24 pb-16 sm:pt-28 sm:pb-20 min-h-[72vh] flex items-center">
+    <section class="pt-24 pb-16 sm:pt-28 sm:pb-20 min-h-[75vh] flex items-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
             <div>
                 <p class="text-blue-700 font-semibold tracking-widest uppercase mb-4 text-sm sm:text-base">
@@ -68,16 +68,20 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                     </a>
                 </div>
             </div>
-            <div class="relative hero-float hidden md:block">
+            <div class="relative hero-float hidden md:block group">
                 <video
-                    src="assets/hero2.mp4"
-                    class="w-full h-[280px] sm:h-[360px] md:h-[420px] object-cover rounded-3xl shadow-2xl shadow-blue-950/20 transition-transform duration-700 hover:scale-[1.02]"
+                    id="heroVideo"
+                    src="assets/hero3.mp4"
+                    class="w-full h-auto object-cover rounded-3xl shadow-2xl shadow-blue-950/20 transition-transform duration-700 group-hover:scale-[1.02]"
                     autoplay
                     muted
                     loop
                     playsinline></video>
                 <!-- <div class="absolute inset-0 bg-gradient-to-br from-blue-950/75 via-blue-900/60 to-cyan-900/50 rounded-3xl"></div> -->
-                <div class="absolute bottom-10 left-10 text-white max-w-md">
+                <button id="heroVideoToggle" type="button" class="absolute bottom-5 right-5 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-blue-900 shadow-lg transition hover:scale-105" aria-label="Play video" title="Play video">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <div class="absolute bottom-10 left-10 text-white max-w-md z-10">
                     <p class="text-sm uppercase tracking-[4px] mb-4 text-blue-200">
                         Arsitek dan Konsultan Teknik
                     </p>
@@ -981,7 +985,41 @@ font-semibold
     <?php include 'footer.php'; ?>
 
     <script src="js/main.js"></script>
+    <script>
+        const heroVideo = document.getElementById('heroVideo');
+        const heroVideoToggle = document.getElementById('heroVideoToggle');
 
+        if (heroVideo && heroVideoToggle) {
+            const updateHeroButton = () => {
+                const isPlaying = !heroVideo.paused && !heroVideo.muted;
+                heroVideoToggle.innerHTML = isPlaying ?
+                    '<i class="fa-solid fa-pause"></i>' :
+                    '<i class="fa-solid fa-play"></i>';
+                heroVideoToggle.setAttribute('aria-label', isPlaying ? 'Pause video' : 'Play video');
+                heroVideoToggle.setAttribute('title', isPlaying ? 'Pause video' : 'Play video');
+            };
+
+            heroVideoToggle.addEventListener('click', async () => {
+                try {
+                    if (heroVideo.paused) {
+                        heroVideo.muted = false;
+                        heroVideo.volume = 0.6;
+                        await heroVideo.play();
+                    } else {
+                        heroVideo.pause();
+                    }
+                } catch (error) {
+                    console.log('Video toggle error:', error);
+                }
+
+                updateHeroButton();
+            });
+
+            heroVideo.addEventListener('play', updateHeroButton);
+            heroVideo.addEventListener('pause', updateHeroButton);
+            updateHeroButton();
+        }
+    </script>
 
 </body>
 
