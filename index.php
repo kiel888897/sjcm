@@ -81,7 +81,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 <button id="heroVideoToggle" type="button" class="absolute bottom-5 right-5 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-blue-900 shadow-lg transition hover:scale-105" aria-label="Play video" title="Play video">
                     <i class="fa-solid fa-play"></i>
                 </button>
-                <div class="absolute bottom-10 left-10 text-white max-w-md z-10">
+                <div class="absolute bottom-5 left-10 text-white max-w-md z-10">
                     <p class="text-sm uppercase tracking-[4px] mb-4 text-blue-200">
                         Arsitek dan Konsultan Teknik
                     </p>
