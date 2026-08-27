@@ -24,9 +24,6 @@ if (!isset($text) || !is_array($text)) {
         <div>
             <img
                 src="assets/images/logo-white.png" class="w-36 mb-6" alt="SJCM Logo">
-            <!-- <p class="text-xs tracking-[3px]uppercase text-blue-200 mb-4">
-               Arsitek dan Konsultan Teknik
-            </p> -->
         </div>
         <!-- COMPANY MENU -->
         <div>

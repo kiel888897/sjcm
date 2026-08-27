@@ -88,7 +88,7 @@ font-medium
 tracking-wide
 ">
 
-                        Arsitek dan Konsultan Teknik
+                        <?= $text['tagline'] ?? 'Architect and Engineering Consultant'; ?>
 
                     </p>
 

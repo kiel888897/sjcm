@@ -1,9 +1,10 @@
 <?php
 require "config/language.php";
+require "config/seo.php";
 ?>
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="<?= htmlspecialchars($lang, ENT_QUOTES, 'UTF-8'); ?>">
 
 <head>
 
@@ -12,16 +13,16 @@ require "config/language.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>
-        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
-    </title>
+    <title><?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?></title>
 
 
-    <meta name="description"
-        content="
-PT Sinergi Jaya Cipta Mandiri adalah konsultan arsitektur,
-struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
-">
+    <meta name="description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="twitter:card" content="summary">
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -50,13 +51,13 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
         </div>
         <div class="relative max-w-7xl mx-auto px-6 text-center">
             <p class="text-cyan-300 uppercase tracking-[5px] font-semibold text-sm">
-                Our Services
+                <?= $text['services_page_title'] ?? 'Our Services'; ?>
             </p>
             <h1 class="mt-5 text-5xl md:text-6xl font-bold leading-tight">
-                Integrated Building Consultancy
+                <?= $text['services_page_heading'] ?? 'Integrated Building Consultancy'; ?>
             </h1>
             <p class="mt-6 max-w-2xl mx-auto text-blue-100 text-lg leading-relaxed">
-                SJCM menyediakan layanan konsultan bangunan yang terintegrasi, mulai dari perencanaan hingga pengawasan, sesuai standar profesional.
+                <?= $text['services_page_subtitle'] ?? 'SJCM provides integrated building consultancy services, from planning through supervision, in accordance with professional standards.'; ?>
             </p>
         </div>
         <!-- Blueprint Line Decoration -->

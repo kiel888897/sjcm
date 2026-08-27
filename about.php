@@ -1,8 +1,9 @@
 <?php
 require "config/language.php";
+require "config/seo.php";
 ?>
 <!DOCTYPE html>
-<html lang="id">
+<html lang="<?= htmlspecialchars($lang, ENT_QUOTES, 'UTF-8'); ?>">
 
 <head>
 
@@ -11,16 +12,16 @@ require "config/language.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>
-        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
-    </title>
+    <title><?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?></title>
 
 
-    <meta name="description"
-        content="
-PT Sinergi Jaya Cipta Mandiri adalah konsultan arsitektur,
-struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
-">
+    <meta name="description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="twitter:card" content="summary">
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -172,8 +173,8 @@ bg-white/20
         <div class="max-w-7xl mx-auto px-6">
 
             <div class="max-w-3xl mx-auto text-center mb-12">
-                <p class="text-blue-700 uppercase tracking-[3px] font-semibold text-sm">Vision & Mission</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">Our Direction and Commitment</h2>
+                <p class="text-blue-700 uppercase tracking-[3px] font-semibold text-sm"><?= $text['about_vision_label'] ?? 'Vision & Mission'; ?></p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3"><?= $text['about_vision_heading'] ?? 'Our Direction and Commitment'; ?></h2>
 
             </div>
 
@@ -232,8 +233,8 @@ bg-white/20
 
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center mb-12">
-                <p class="text-blue-700 uppercase tracking-[3px] font-semibold text-sm">Our Team</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">Meet Our Professional Team</h2>
+                <p class="text-blue-700 uppercase tracking-[3px] font-semibold text-sm"><?= $text['about_team_label'] ?? 'Our Team'; ?></p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3"><?= $text['about_team_heading'] ?? 'Meet Our Professional Team'; ?></h2>
 
             </div>
 

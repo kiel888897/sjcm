@@ -1,10 +1,11 @@
 <?php
 
 require "config/language.php";
+require "config/seo.php";
 
 ?>
 <!DOCTYPE html>
-<html lang="id">
+<html lang="<?= htmlspecialchars($lang, ENT_QUOTES, 'UTF-8'); ?>">
 
 <head>
 
@@ -13,16 +14,18 @@ require "config/language.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>
-        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
-    </title>
+    <title><?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?></title>
 
 
-    <meta name="description"
-        content="
-PT Sinergi Jaya Cipta Mandiri adalah konsultan arsitektur,
-struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
-">
+    <meta name="description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="<?= $lang === 'id' ? 'id_ID' : 'en_US'; ?>">
+    <meta property="og:title" content="<?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:site_name" content="PT Sinergi Jaya Cipta Mandiri">
+    <meta name="twitter:card" content="summary">
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -50,21 +53,20 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
         <div class="pt-5 max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
             <div>
                 <p class="text-blue-700 font-semibold tracking-widest uppercase mb-4 text-sm sm:text-base">
-                    Construction & Consulting Services
+                    <?= $text['hero_eyebrow'] ?? 'Construction & Consulting Services'; ?>
                 </p>
                 <h1 class="text-4xl sm:text-5xl font-bold leading-tight text-gray-900">
-                    Engineering Solutions
-                    for Better Building Future
+                    <?= $text['hero_heading'] ?? 'Engineering Solutions for Better Building Future'; ?>
                 </h1>
                 <p class="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-                    Layanan konsultasi arsitektur, struktur, MEP, manajemen konstruksi, estimasi biaya RaB, PBG, SLF dan pengawasan konstruksi dengan standar profesional.
+                    <?= $text['hero_description'] ?? 'Architectural, structural, MEP, construction management, cost estimation, PBG, SLF, and construction supervision services delivered to professional standards.'; ?>
                 </p>
                 <div class="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
                     <a href="contact.php" class="w-full sm:w-auto text-center bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold shadow-sm hover:bg-blue-800 transition">
-                        Konsultasi Sekarang
+                        <?= $text['hero_consultation_button'] ?? 'Consult Now'; ?>
                     </a>
                     <a href="services.php" class="w-full sm:w-auto text-center border border-blue-900 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
-                        Layanan Kami
+                        <?= $text['hero_services_button'] ?? 'Our Services'; ?>
                     </a>
                 </div>
             </div>
@@ -83,7 +85,7 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
                 </button>
                 <div class="absolute bottom-5 left-10 text-white max-w-md z-10">
                     <p class="text-sm uppercase tracking-[4px] mb-1 text-blue-200">
-                        Arsitek dan Konsultan Teknik
+                        <?= $text['hero_video_label'] ?? 'Architect and Engineering Consultant'; ?>
                     </p>
                 </div>
             </div>

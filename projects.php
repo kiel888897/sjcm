@@ -1,8 +1,9 @@
 <?php
 require "config/language.php";
+require "config/seo.php";
 ?>
 <!DOCTYPE html>
-<html lang="id">
+<html lang="<?= htmlspecialchars($lang, ENT_QUOTES, 'UTF-8'); ?>">
 
 <head>
 
@@ -11,16 +12,16 @@ require "config/language.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>
-        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
-    </title>
+    <title><?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?></title>
 
 
-    <meta name="description"
-        content="
-PT Sinergi Jaya Cipta Mandiri adalah konsultan arsitektur,
-struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
-">
+    <meta name="description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="twitter:card" content="summary">
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -46,13 +47,13 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
         </div>
         <div class="relative max-w-7xl mx-auto px-6 text-center">
             <p class="text-cyan-300 uppercase tracking-[5px] font-semibold text-sm">
-                Our Portfolio
+                <?= $text['projects_page_title'] ?? 'Our Portfolio'; ?>
             </p>
             <h1 class="mt-5 text-5xl md:text-6xl font-bold leading-tight">
-                Arsitek & Konsultan Teknik
+                <?= $text['projects_page_heading'] ?? 'Engineering Projects'; ?>
             </h1>
             <p class="mt-6 max-w-2xl mx-auto text-blue-100 text-lg leading-relaxed">
-                Dokumentasi proyek yang mencerminkan kemampuan kami dalam perencanaan, desain, pengecekan dan pengawasan konstruksi.
+                <?= $text['projects_page_subtitle'] ?? 'Project documentation reflecting our capabilities in planning, design, inspection, and construction supervision.'; ?>
             </p>
         </div>
         <!-- Blueprint Line Decoration -->
@@ -61,20 +62,20 @@ struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
     <section class="pt-24 bg-gray-50">
         <div class="flex justify-center gap-4 mb-14 flex-wrap">
             <button data-filter="all" class="filter-btn px-6 py-2 rounded-full bg-blue-900 text-white font-semibold">
-                All
+                <?= $text['filter_all'] ?? 'All'; ?>
             </button>
 
             <button data-filter="architecture"
                 class="filter-btn px-6 py-2 rounded-full border">
-                Architecture
+                <?= $text['filter_architecture'] ?? 'Architecture'; ?>
             </button>
             <button
                 data-filter="structure" class="filter-btn px-6 py-2 rounded-full border">
-                Structure
+                <?= $text['filter_structure'] ?? 'Structure'; ?>
             </button>
             <button
                 data-filter="mep" class="filter-btn px-6 py-2 rounded-full border">
-                MEP
+                <?= $text['filter_mep'] ?? 'MEP'; ?>
             </button>
         </div>
     </section>

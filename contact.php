@@ -1,8 +1,9 @@
 <?php
 require "config/language.php";
+require "config/seo.php";
 ?>
 <!DOCTYPE html>
-<html lang="id">
+<html lang="<?= htmlspecialchars($lang, ENT_QUOTES, 'UTF-8'); ?>">
 
 <head>
 
@@ -11,16 +12,16 @@ require "config/language.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>
-        PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik Bali
-    </title>
+    <title><?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?></title>
 
 
-    <meta name="description"
-        content="
-PT Sinergi Jaya Cipta Mandiri adalah konsultan arsitektur,
-struktur, MEP, PBG dan SLF profesional di Denpasar Bali.
-">
+    <meta name="description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="twitter:card" content="summary">
 
 
     <link rel="stylesheet" href="css/style.css">
