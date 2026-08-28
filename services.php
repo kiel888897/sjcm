@@ -11,11 +11,7 @@ require "config/seo.php";
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <title><?= htmlspecialchars($seo['title'], ENT_QUOTES, 'UTF-8'); ?></title>
-
-
     <meta name="description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
     <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:type" content="website">
@@ -23,25 +19,14 @@ require "config/seo.php";
     <meta property="og:description" content="<?= htmlspecialchars($seo['description'], ENT_QUOTES, 'UTF-8'); ?>">
     <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>">
     <meta name="twitter:card" content="summary">
-
-
     <link rel="stylesheet" href="css/style.css">
 
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-
 <body class="bg-white text-gray-800">
-
-
     <!-- NAVBAR -->
-
     <?php include "navbar.php" ?>
     <section class="relative pt-44 pb-28 overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-900 text-white">
         <!-- Decorative Background -->
@@ -65,632 +50,219 @@ require "config/seo.php";
     </section>
 
     <section class="py-24 bg-white">
-
         <div class="max-w-7xl mx-auto px-6">
-
-
-
-
-
-
-
-
             <!-- SERVICES GRID -->
-
-
-            <div class="
-    grid
-    md:grid-cols-2
-    gap-8
-    ">
-
-
-
+            <div class="grid md:grid-cols-2 gap-8">
                 <!-- ARCHITECTURE -->
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
-                    <div class="
-            flex
-            gap-5
-            items-start
-            ">
-
-
-                        <div class="
-                w-16
-                h-16
-                shrink-0
-                bg-blue-900
-                text-white
-                rounded-2xl
-                flex
-                items-center
-                justify-center
-                text-2xl
-                ">
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
+                    <div class="flex gap-5 items-start">
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-building"></i>
-
                         </div>
-
-
                         <div>
-
-                            <h3 class="
-                    text-2xl
-                    font-bold
-                    ">
-                                Architecture
+                            <h3 class="text-2xl font-bold">
+                                <?= $text['service_architecture_title']; ?>
                             </h3>
-
-
-                            <p class="
-                    mt-3
-                    text-gray-600
-                    leading-relaxed
-                    ">
-                                Layanan perencanaan arsitektur untuk
-                                menghasilkan desain bangunan yang
-                                fungsional, estetis, dan sesuai kebutuhan pengguna.
+                            <p class="mt-3 text-gray-600 leading-relaxed">
+                                <?= $text['service_architecture_description']; ?>
                             </p>
-
-
-                            <ul class="
-                    mt-5
-                    space-y-2
-                    text-sm
-                    text-gray-700
-                    ">
-
-
+                            <ul class="mt-5 space-y-2 text-sm text-gray-700">
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Konsep desain bangunan
+                                    <?= $text['service_architecture_item_1']; ?>
                                 </li>
-
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Pengembangan desain
+                                    <?= $text['service_architecture_item_2']; ?>
                                 </li>
-
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Dokumentasi gambar kerja
+                                    <?= $text['service_architecture_item_3']; ?>
                                 </li>
-
-
                             </ul>
-
                         </div>
-
-
                     </div>
-
-
                 </div>
-
-
-
-
 
                 <!-- STRUCTURE -->
-
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
-                    <div class="
-            flex
-            gap-5
-            items-start
-            ">
-
-
-                        <div class="
-                w-16
-                h-16
-                bg-blue-900
-                text-white
-                rounded-2xl
-                flex
-                items-center
-                justify-center
-                text-2xl
-                ">
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50 ">
+                    <div class="flex gap-5 items-start">
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-compass-drafting"></i>
-
                         </div>
-
-
-
                         <div>
-
-
                             <h3 class="text-2xl font-bold">
-                                Structural Engineering
+                                <?= $text['service_structure_title']; ?>
                             </h3>
-
-
-                            <p class="
-                    mt-3
-                    text-gray-600
-                    leading-relaxed
-                    ">
-                                Perencanaan struktur bangunan dengan
-                                mempertimbangkan aspek keamanan,
-                                kekuatan, dan efisiensi konstruksi.
+                            <p class="mt-3 text-gray-600 leading-relaxed">
+                                <?= $text['service_structure_description']; ?>
                             </p>
-
-
-
                             <ul class="mt-5 space-y-2 text-sm">
-
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Analisis struktur
+                                    <?= $text['service_structure_item_1']; ?>
                                 </li>
-
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Perhitungan engineering
+                                    <?= $text['service_structure_item_2']; ?>
                                 </li>
-
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Struktur bangunan
+                                    <?= $text['service_structure_item_3']; ?>
                                 </li>
-
-
                             </ul>
-
-
                         </div>
-
-
                     </div>
-
-
                 </div>
-
-
-
-
 
                 <!-- MEP -->
-
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
                     <div class="flex gap-5">
-
-
-                        <div class="
-                w-16 h-16
-                bg-blue-900
-                text-white
-                rounded-2xl
-                flex
-                items-center
-                justify-center
-                text-2xl
-                ">
-
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-gears"></i>
-
                         </div>
-
-
                         <div>
-
                             <h3 class="text-2xl font-bold">
-                                MEP Engineering
+                                <?= $text['service_mep_title']; ?>
                             </h3>
-
-
                             <p class="mt-3 text-gray-600">
-                                Perencanaan sistem mechanical,
-                                electrical, dan plumbing untuk
-                                mendukung fungsi bangunan modern.
+                                <?= $text['service_mep_description']; ?>
                             </p>
-
-
                             <ul class="mt-5 space-y-2 text-sm">
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Mechanical System
+                                    <?= $text['service_mep_item_1']; ?>
                                 </li>
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Electrical System
+                                    <?= $text['service_mep_item_2']; ?>
                                 </li>
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Plumbing System
+                                    <?= $text['service_mep_item_3']; ?>
                                 </li>
-
                             </ul>
-
-
                         </div>
-
-
                     </div>
-
-
                 </div>
-
-
-
-
-
 
                 <!-- PBG SLF -->
-
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
                     <div class="flex gap-5">
-
-
-                        <div class="
-                w-16 h-16
-                bg-blue-900
-                text-white
-                rounded-2xl
-                flex
-                items-center
-                justify-center
-                text-2xl
-                ">
-
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-file-circle-check"></i>
-
                         </div>
-
-
                         <div>
-
                             <h3 class="text-2xl font-bold">
-                                PBG & SLF
+                                <?= $text['service_pbg_slf_title']; ?>
                             </h3>
-
-
                             <p class="mt-3 text-gray-600">
-                                Pendampingan pemenuhan persyaratan
-                                administrasi dan teknis bangunan
-                                sesuai regulasi yang berlaku.
+                                <?= $text['service_pbg_slf_description']; ?>
                             </p>
-
-
                             <ul class="mt-5 space-y-2 text-sm">
 
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Persetujuan Bangunan Gedung
+                                    <?= $text['service_pbg_slf_item_1']; ?>
                                 </li>
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Sertifikat Laik Fungsi
+                                    <?= $text['service_pbg_slf_item_2']; ?>
                                 </li>
-
                                 <li>
                                     <i class="fa-solid fa-check text-blue-900"></i>
-                                    Review dokumen teknis
+                                    <?= $text['service_pbg_slf_item_3']; ?>
                                 </li>
-
-
                             </ul>
-
-
                         </div>
-
-
                     </div>
-
-
                 </div>
-
-
-
-
 
                 <!-- DESIGN -->
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
                     <div class="flex gap-5">
-
-
-                        <div class="
-        w-16 h-16
-        bg-blue-900
-        text-white
-        rounded-2xl
-        flex items-center
-        justify-center
-        text-2xl
-        ">
-
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-pen-ruler"></i>
-
                         </div>
-
-
                         <div>
-
                             <h3 class="text-2xl font-bold">
-                                Design Development
+                                <?= $text['service_design_title']; ?>
                             </h3>
-
-
                             <p class="mt-3 text-gray-600">
-                                Pengembangan desain teknis untuk memastikan
-                                konsep dapat diwujudkan dalam proses konstruksi.
+                                <?= $text['service_design_description']; ?>
                             </p>
-
-
                         </div>
-
-
                     </div>
-
                 </div>
-
-
-
-
 
                 <!-- CHECKING -->
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
                     <div class="flex gap-5">
-
-
-                        <div class="
-        w-16 h-16
-        bg-blue-900
-        text-white
-        rounded-2xl
-        flex items-center
-        justify-center
-        text-2xl
-        ">
-
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-magnifying-glass-chart"></i>
-
                         </div>
-
-
                         <div>
-
                             <h3 class="text-2xl font-bold">
-                                Technical Checking
+                                <?= $text['service_checking_title']; ?>
                             </h3>
-
-
                             <p class="mt-3 text-gray-600">
-                                Pemeriksaan teknis untuk memastikan
-                                kualitas desain dan dokumen sesuai standar.
+                                <?= $text['service_checking_description']; ?>
                             </p>
-
-
                         </div>
-
-
                     </div>
-
-
                 </div>
-
 
                 <!-- MANAGEMEN KONSTRUKSI -->
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
                     <div class="flex gap-5">
-
-
-                        <div class="
-        w-16 h-16
-        bg-blue-900
-        text-white
-        rounded-2xl
-        flex items-center
-        justify-center
-        text-2xl
-        ">
-
+                        <div class=" w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-hard-hat"></i>
-
                         </div>
-
-
                         <div>
-
                             <h3 class="text-2xl font-bold">
-                                Manajemen Konstruksi
+                                <?= $text['service_construction_management_title']; ?>
                             </h3>
-
-
                             <p class="mt-3 text-gray-600">
-                                Perencanaan, pengawasan, dan koordinasi proyek konstruksi yang Efektif dan Efisien dalam Biaya, Pengendalian Mutu dan waktu Pekerjaan, Pencapaian Target SMK-3, dan Konstruksi Ramah Lingkungan.
+                                <?= $text['service_construction_management_description']; ?>
                             </p>
-
-
                         </div>
-
-
                     </div>
-
                 </div>
 
-
-
                 <!-- ESTIMATOR -->
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
                     <div class="flex gap-5">
-
-
-                        <div class="
-        w-16 h-16
-        bg-blue-900
-        text-white
-        rounded-2xl
-        flex items-center
-        justify-center
-        text-2xl
-        ">
-
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-calculator"></i>
-
                         </div>
-
-
                         <div>
-
                             <h3 class="text-2xl font-bold">
-                                Estimator
+                                <?= $text['service_estimator_title']; ?>
                             </h3>
-
-
                             <p class="mt-3 text-gray-600">
-                                Estimasi biaya konstruksi dan Penyusunan anggaran proyek yang akurat, sehingga pelaksanaan proyek dapat berjalan dengan Tepat, lancar dan Sukses.
+                                <?= $text['service_estimator_description']; ?>
                             </p>
-
-
                         </div>
-
-
                     </div>
-
                 </div>
 
 
 
                 <!-- QUANTITY SURVEYOR -->
-
-                <div class="
-        p-8
-        rounded-3xl
-        border
-        hover:shadow-xl
-        transition
-        bg-gray-50
-        ">
-
-
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
                     <div class="flex gap-5">
-
-
-                        <div class="
-        w-16 h-16
-        bg-blue-900
-        text-white
-        rounded-2xl
-        flex items-center
-        justify-center
-        text-2xl
-        ">
-
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
                             <i class="fa-solid fa-ruler-combined"></i>
-
                         </div>
-
-
                         <div>
-
                             <h3 class="text-2xl font-bold">
-                                Quantity Surveyor
+                                <?= $text['service_quantity_surveyor_title']; ?>
                             </h3>
-
-
                             <p class="mt-3 text-gray-600">
-                                Pengukuran kuantitas Pekerjaan dan Analisis biaya konstruksi untuk mendukung perencanaan, pelaksanaan serta pengendalian anggaran biaya Proyek.
+                                <?= $text['service_quantity_surveyor_description']; ?>
                             </p>
-
-
                         </div>
-
-
                     </div>
-
                 </div>
 
 
