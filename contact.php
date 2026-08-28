@@ -57,7 +57,7 @@ require "config/seo.php";
             </p>
         </div>
         <!-- Blueprint Line Decoration -->
-        <div class="absolute bottom-0 left-0 right-0 h-px bg-white/20"> </div>
+        <div class="absolute bottom-0 left-0 right-0 h-px bg-white/20"></div>
     </section>
 
     <section class="py-24 bg-gray-50">
@@ -66,12 +66,7 @@ require "config/seo.php";
         <div class="max-w-7xl mx-auto px-6">
 
 
-            <div class="
-grid 
-lg:grid-cols-2 
-gap-12 
-items-center
-">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
 
 
                 <!-- LEFT CONTACT -->
@@ -79,36 +74,21 @@ items-center
                 <div>
 
 
-                    <p class="
-text-blue-700
-uppercase
-tracking-[3px]
-font-semibold
-text-sm
-">
+                    <p class="text-blue-700 uppercase tracking-[3px] font-semibold text-sm">
 
                         <?= $text['contact_info_label'] ?? 'Contact Information'; ?>
 
                     </p>
 
 
-                    <h2 class="
-text-4xl
-font-bold
-text-gray-900
-mt-3
-">
+                    <h2 class="text-4xl font-bold text-gray-900 mt-3">
 
                         <?= $text['contact_info_heading'] ?? "Let's Discuss Your Project"; ?>
 
                     </h2>
 
 
-                    <p class="
-mt-4
-text-gray-600
-leading-relaxed
-">
+                    <p class="mt-4 text-gray-600 leading-relaxed">
 
                         <?= $text['contact_info_desc'] ?? 'Contact the professional SJCM team for building planning consultation, engineering design, PBG, SLF, and your construction needs.'; ?>
 
@@ -116,44 +96,16 @@ leading-relaxed
 
 
 
-                    <div class="
-grid
-md:grid-cols-1
-gap-5
-mt-10
-">
+                    <div class="grid md:grid-cols-1 gap-5 mt-10">
 
 
 
                         <!-- OFFICE -->
 
-                        <div class="
-group
-bg-white
-rounded-2xl
-p-6
-border
-shadow-sm
-hover:shadow-xl
-transition
-flex
-gap-5
-items-start
-">
+                        <div class="group bg-white rounded-2xl p-6 border shadow-sm hover:shadow-xl transition flex gap-5 items-start">
 
 
-                            <div class="
-w-14
-h-14
-rounded-xl
-bg-blue-950
-text-white
-flex
-items-center
-justify-center
-text-xl
-shrink-0
-">
+                            <div class="w-14 h-14 rounded-xl bg-blue-950 text-white flex items-center justify-center text-xl shrink-0">
 
 
                                 <i class="fa-solid fa-location-dot"></i>
@@ -166,26 +118,14 @@ shrink-0
                             <div>
 
 
-                                <h3 class="
-font-bold
-text-lg
-text-gray-900
-">
+                                <h3 class="font-bold text-lg text-gray-900">
 
                                     <?= $text['contact_office'] ?? 'Office'; ?>
 
                                 </h3>
 
 
-                                <a
-                                    href="#"
-                                    class="
-text-gray-600
-mt-2
-block
-leading-relaxed
-hover:text-blue-900
-">
+                                <a href="#" class="text-gray-600 mt-2 block leading-relaxed hover:text-blue-900">
 
                                     Jl. Pulau Galang,
                                     Perum Prima Graha No.10,
@@ -206,33 +146,10 @@ hover:text-blue-900
 
                         <!-- WHATSAPP -->
 
-                        <div class="
-group
-bg-white
-rounded-2xl
-p-6
-border
-shadow-sm
-hover:shadow-xl
-transition
-flex
-gap-5
-items-start
-">
+                        <div class="group bg-white rounded-2xl p-6 border shadow-sm hover:shadow-xl transition flex gap-5 items-start">
 
 
-                            <div class="
-w-14
-h-14
-rounded-xl
-bg-green-500
-text-white
-flex
-items-center
-justify-center
-text-xl
-shrink-0
-">
+                            <div class="w-14 h-14 rounded-xl bg-green-500 text-white flex items-center justify-center text-xl shrink-0">
 
 
                                 <i class="fa-brands fa-whatsapp"></i>
@@ -245,26 +162,14 @@ shrink-0
                             <div>
 
 
-                                <h3 class="
-font-bold
-text-lg
-text-gray-900
-">
+                                <h3 class="font-bold text-lg text-gray-900">
 
                                     <?= $text['contact_whatsapp'] ?? 'WhatsApp'; ?>
 
                                 </h3>
 
 
-                                <a
-                                    href="https://wa.me/628156897486"
-                                    target="_blank"
-                                    class="
-text-gray-600
-mt-2
-block
-hover:text-green-600
-">
+                                <a href="https://wa.me/628156897486" target="_blank" class="text-gray-600 mt-2 block hover:text-green-600">
 
                                     +62 815-6897-486
 
@@ -282,33 +187,10 @@ hover:text-green-600
 
                         <!-- EMAIL -->
 
-                        <div class="
-group
-bg-white
-rounded-2xl
-p-6
-border
-shadow-sm
-hover:shadow-xl
-transition
-flex
-gap-5
-items-start
-">
+                        <div class="group bg-white rounded-2xl p-6 border shadow-sm hover:shadow-xl transition flex gap-5 items-start">
 
 
-                            <div class="
-w-14
-h-14
-rounded-xl
-bg-blue-700
-text-white
-flex
-items-center
-justify-center
-text-xl
-shrink-0
-">
+                            <div class="w-14 h-14 rounded-xl bg-blue-700 text-white flex items-center justify-center text-xl shrink-0">
 
 
                                 <i class="fa-solid fa-envelope"></i>
@@ -321,25 +203,14 @@ shrink-0
                             <div>
 
 
-                                <h3 class="
-font-bold
-text-lg
-text-gray-900
-">
+                                <h3 class="font-bold text-lg text-gray-900">
 
                                     <?= $text['contact_email'] ?? 'Email'; ?>
 
                                 </h3>
 
 
-                                <a
-                                    href="mailto:admin@sjcm4u.com"
-                                    class="
-text-gray-600
-mt-2
-block
-hover:text-blue-900
-">
+                                <a href="mailto:admin@sjcm4u.com" class="text-gray-600 mt-2 block hover:text-blue-900">
 
                                     admin@sjcm4u.com
 
@@ -368,28 +239,15 @@ hover:text-blue-900
                 <div class="relative">
 
 
-                    <div class="
-rounded-3xl
-overflow-hidden
-shadow-xl
-border
-bg-white
-p-3
-">
+                    <div class="rounded-3xl overflow-hidden shadow-xl border bg-white p-3">
 
 
-                        <iframe
-                            class="
-w-full
-h-[500px]
-rounded-2xl
-"
-                            src="https://www.google.com/maps/embed?pb=!1m18..."
+                        <iframe class="w-full h-[500px] rounded-2xl"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3943.995350959838!2d115.18973207501477!3d-8.691989991356477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDEnMzEuMiJTIDExNcKwMTEnMzIuMyJF!5e0!3m2!1sid!2sid!4v1787905616098!5m2!1sid!2sid"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-
 
                     </div>
 
@@ -397,40 +255,26 @@ rounded-2xl
 
                     <!-- FLOATING LABEL -->
 
+                    <a href="https://maps.app.goo.gl/SBHXokce6ZLGQfeh9" target="_blank" class="absolute inset-0 z-10">
 
-                    <div class="
-absolute
-bottom-8
-left-8
-bg-white
-rounded-xl
-shadow-lg
-px-5
-py-4
-">
+                        <div class="absolute bottom-8 left-8 bg-white rounded-xl shadow-lg px-5 py-4">
+
+                            <p class="font-bold text-gray-900">
+
+                                <?= $text['contact_map_label'] ?? 'SJCM Office'; ?>
+
+                            </p>
 
 
-                        <p class="
-font-bold
-text-gray-900
-">
+                            <p class="text-sm text-gray-500">
 
-                            <?= $text['contact_map_label'] ?? 'SJCM Office'; ?>
+                                <?= $text['contact_map_city'] ?? 'Denpasar, Bali'; ?>
 
-                        </p>
+                            </p>
 
 
-                        <p class="
-text-sm
-text-gray-500
-">
-
-                            <?= $text['contact_map_city'] ?? 'Denpasar, Bali'; ?>
-
-                        </p>
-
-
-                    </div>
+                        </div>
+                    </a>
 
 
 

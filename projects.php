@@ -117,16 +117,16 @@ require "config/seo.php";
                 <!-- DETAIL -->
                 <div class="p-10">
                     <p class="text-blue-700 uppercase tracking-widest text-sm font-semibold">
-                        Architecture
+                        <?= $text['project_architecture_label']; ?>
                     </p>
-                    <h3 class="mt-3 text-2xl font-bold text-gray-800">Desain yang Memperhatikan Pengalaman Pengguna</h3>
+                    <h3 class="mt-3 text-2xl font-bold text-gray-800"><?= $text['project_architecture_title']; ?></h3>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Perencanaan arsitektur estetis dan fungsional; fokus pada tata ruang, sirkulasi, dan identitas visual yang kuat untuk setiap proyek.
+                        <?= $text['project_architecture_description']; ?>
                     </p>
                     <ul class="mt-5 space-y-2 text-sm text-gray-700">
-                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Konsep desain & skematik</li>
-                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Koordinasi interior dan material</li>
-                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Izin & dokumentasi teknis</li>
+                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_architecture_item_1']; ?></li>
+                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_architecture_item_2']; ?></li>
+                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_architecture_item_3']; ?></li>
                     </ul>
                 </div>
             </div>
@@ -164,16 +164,16 @@ require "config/seo.php";
                 <!-- DETAIL -->
                 <div class="p-10">
                     <p class="text-blue-700 uppercase tracking-widest text-sm font-semibold">
-                        Structure
+                        <?= $text['project_structure_label']; ?>
                     </p>
-                    <h3 class="mt-3 text-2xl font-bold text-gray-800">Solusi Struktur yang Andal</h3>
+                    <h3 class="mt-3 text-2xl font-bold text-gray-800"><?= $text['project_structure_title']; ?></h3>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Perancangan struktur yang mengutamakan keselamatan dan efisiensi; solusi struktural disesuaikan dengan kondisi site dan kebutuhan arsitektural.
+                        <?= $text['project_structure_description']; ?>
                     </p>
                     <ul class="mt-5 space-y-2 text-sm text-gray-700">
-                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Analisis beban & optimasi struktur</li>
-                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Desain pondasi dan sistem rangka</li>
-                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Detailing & shop drawing</li>
+                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_structure_item_1']; ?></li>
+                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_structure_item_2']; ?></li>
+                        <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_structure_item_3']; ?></li>
                     </ul>
                 </div>
             </div>
@@ -203,18 +203,18 @@ require "config/seo.php";
                 <!-- details  -->
                 <div class="p-10">
                     <p class="text-blue-700 uppercase tracking-widest text-sm font-semibold">
-                        MEP
+                        <?= $text['project_mep_label']; ?>
                     </p>
-                    <h3 class="mt-3 text-2xl font-bold text-gray-800">Sistem Bangunan Terintegrasi</h3>
+                    <h3 class="mt-3 text-2xl font-bold text-gray-800"><?= $text['project_mep_title']; ?></h3>
                     <p class="mt-4 text-gray-600 leading-relaxed">
-                        Integrasi sistem MEP yang terkoordinasi untuk kenyamanan, keselamatan, dan efisiensi energi dalam operasional bangunan.
+                        <?= $text['project_mep_description']; ?>
                     </p>
                     <div class="mt-6 space-y-3 text-gray-700">
                         <ul class="mt-5 space-y-2 text-sm text-gray-700">
-                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Electrical system design</li>
-                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Plumbing and drainage planning</li>
-                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>HVAC and ventilation coordination</li>
-                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i>Energy efficiency & passive strategies</li>
+                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_mep_item_1']; ?></li>
+                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_mep_item_2']; ?></li>
+                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_mep_item_3']; ?></li>
+                            <li><i class="fa-solid fa-check text-blue-900 mr-2"></i><?= $text['project_mep_item_4']; ?></li>
                         </ul>
                     </div>
                 </div>
