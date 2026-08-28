@@ -211,6 +211,22 @@ require "config/seo.php";
                         </div>
                     </div>
                 </div>
+                <!-- Review -->
+                <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">
+                    <div class="flex gap-5">
+                        <div class="w-16 h-16 shrink-0 bg-blue-900 text-white rounded-2xl flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">
+                                <?= $text['service_review_title']; ?>
+                            </h3>
+                            <p class="mt-3 text-gray-600">
+                                <?= $text['service_review_description']; ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- MANAGEMEN KONSTRUKSI -->
                 <div class="p-8 rounded-3xl border hover:shadow-xl transition bg-gray-50">

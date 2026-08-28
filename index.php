@@ -93,33 +93,17 @@ require "config/seo.php";
     </section>
 
     <!-- About -->
-
     <section class="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-slate-100 to-white overflow-hidden">
 
 
         <!-- Decorative Background -->
-        <div class="
-    absolute 
-    top-20 
-    left-0 
-    w-72 
-    h-72 
-    bg-blue-200/30 
-    rounded-full 
-    blur-3xl
-    ">
-        </div>
+        <div class="absolute top-20 left-0 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl"></div>
 
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
 
 
-            <div class="
-        grid 
-        md:grid-cols-2 
-        gap-8 sm:gap-10 lg:gap-16 
-        items-center
-        ">
+            <div class="grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
 
 
 
@@ -128,36 +112,13 @@ require "config/seo.php";
                 <div class="relative group">
 
 
-                    <img
-                        src="assets/images/about-engineering.jpg"
-                        alt="PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik"
-                        class="
-                w-full
-                h-[280px]
-                sm:h-[360px]
-                md:h-[420px]
-                lg:h-[520px]
-                object-cover
-                rounded-3xl
-                shadow-2xl
-                transition
-                duration-700
-                group-hover:scale-[1.03]
-                ">
+                    <img src="assets/images/about-engineering.jpg" alt="PT Sinergi Jaya Cipta Mandiri | Arsitek dan Konsultan Teknik" class="w-full h-[280px] sm:h-[360px] md:h-[420px] lg:h-[520px] object-cover rounded-3xl shadow-2xl transition duration-700 group-hover:scale-[1.03]">
 
 
 
                     <!-- Overlay -->
 
-                    <div class="
-                absolute
-                inset-0
-                rounded-3xl
-                bg-gradient-to-t
-                from-blue-950/70
-                via-transparent
-                to-transparent
-                "></div>
+                    <div class="absolute inset-0 rounded-3xl bg-gradient-to-t from-blue-950/70 via-transparent to-transparent"></div>
 
 
 
@@ -172,101 +133,37 @@ require "config/seo.php";
                 <div>
 
 
-                    <p class="
-                text-blue-700
-                font-semibold
-                uppercase
-                tracking-[4px]
-                text-sm
-                ">
-                        About SJCM
+                    <p class="text-blue-700 font-semibold uppercase tracking-[4px] text-sm">
+                        <?= $text['about_section_label']; ?>
                     </p>
 
 
 
-                    <h2 class="
-                mt-5
-                text-3xl
-                sm:text-4xl
-                md:text-5xl
-                font-bold
-                leading-tight
-                text-gray-900
-                ">
-
-                        Construction
-                        <span class="text-blue-900">
-                            &
-                        </span>
-                        Consulting Services
+                    <h2 class="mt-5 text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-900">
+                        <?= $text['about_section_heading']; ?>
                     </h2>
 
 
 
-                    <div class="
-                w-20
-                h-1
-                bg-blue-900
-                mt-6
-                mb-8
-                ">
-                    </div>
+                    <div class="w-20 h-1 bg-blue-900 mt-6 mb-8"></div>
 
 
 
-                    <p class="
-                text-gray-600
-                text-base
-                sm:text-lg
-                leading-relaxed
-                ">
-
-                        PT Sinergi Jaya Cipta Mandiri merupakan perusahaan
-                        konsultan teknik yang menyediakan layanan perencanaan,
-                        desain, dan pengawasan konstruksi bangunan.
-
+                    <p class="text-gray-600 text-base sm:text-lg leading-relaxed">
+                        <?= $text['about_section_text_1']; ?>
                     </p>
 
 
 
 
-                    <p class="
-                mt-5
-                text-gray-600
-                text-base
-                sm:text-lg
-                leading-relaxed
-                ">
-
-                        Dengan pendekatan engineering yang terintegrasi,
-                        kami memberikan solusi profesional dalam bidang
-                        arsitektur, struktur, mechanical electrical plumbing
-                        (MEP), PBG, SLF, serta konsultasi konstruksi.
-
+                    <p class="mt-5 text-gray-600 text-base sm:text-lg leading-relaxed">
+                        <?= $text['about_section_text_2']; ?>
                     </p>
 
 
-                    <a href="about.php"
-                        class="
-                inline-flex
-                items-center
-                gap-3
-                mt-10
-                bg-blue-900
-                text-white
-                px-8
-                py-3
-                rounded-lg
-                font-semibold
-                hover:bg-blue-800
-                transition
-                shadow-lg
-                ">
-
-                        Learn More
-
+                    <a href="about.php" class="inline-flex items-center gap-3 mt-10 bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition shadow-lg">
+                        <?= $text['learn_more']; ?>
                         <i class="fa-solid fa-arrow-right"></i>
-
                     </a>
 
 
@@ -282,152 +179,38 @@ require "config/seo.php";
 
     </section>
 
-
     <section class="py-16 sm:py-20 lg:py-24 bg-gray-50">
-
         <div class="max-w-7xl mx-auto px-6">
-
-
             <!-- Header -->
-
             <div class="text-center mb-14">
-
-                <p class="
-            text-blue-700
-            font-semibold
-            uppercase
-            tracking-[4px]
-            text-sm
-            ">
-                    Our Services
+                <p class="text-blue-700 font-semibold uppercase tracking-[4px] text-sm">
+                    <?= $text['home_services_title']; ?>
                 </p>
-
-
-                <h2 class="
-            mt-4
-            text-4xl
-            md:text-5xl
-            font-bold
-            text-gray-900
-            ">
-                    Integrated Engineering
-                    <span class="text-blue-900">
-                        Consultancy
-                    </span>
+                <h2 class="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
+                    <?= $text['home_services_heading']; ?>
                 </h2>
-
-
-                <p class="
-            mt-5
-            max-w-3xl
-            mx-auto
-            text-gray-600
-            text-lg
-            ">
-                    Providing professional engineering solutions
-                    for building planning, design, compliance,
-                    and construction management.
+                <p class="mt-5 max-w-3xl mx-auto text-gray-600 text-lg">
+                    <?= $text['home_services_description']; ?>
                 </p>
-
-
             </div>
 
-
-
-
             <!-- Service Grid -->
-
-
-            <div class="
-        grid
-        sm:grid-cols-2
-        lg:grid-cols-4
-        gap-6
-        ">
-
-
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Architecture -->
-
-                <div class="
-            group
-            bg-white
-            rounded-2xl
-            p-7
-            border
-            border-gray-200
-            hover:border-blue-900
-            hover:shadow-xl
-            transition
-            duration-300
-            ">
-
-
-                    <div class="
-                w-14
-                h-14
-                rounded-xl
-                bg-blue-900
-                text-white
-                flex
-                items-center
-                justify-center
-                text-2xl
-                mb-5
-                group-hover:scale-110
-                transition
-                ">
-
+                <div class="group bg-white rounded-2xl p-7 border border-gray-200 hover:border-blue-900 hover:shadow-xl transition duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">
                         <i class="fa-solid fa-building"></i>
-
                     </div>
-
-
-
-                    <h3 class="
-                text-xl
-                font-bold
-                ">
-                        Architecture
+                    <h3 class="text-xl font-bold">
+                        <?= $text['home_service_architecture_title']; ?>
                     </h3>
-
-
-                    <p class="
-                mt-3
-                text-gray-600
-                text-sm
-                ">
-                        Architectural planning
-                        and building concept development.
+                    <p class="mt-3 text-gray-600 text-sm">
+                        <?= $text['home_service_architecture_description']; ?>
                     </p>
-
-
                 </div>
                 <!-- Structure -->
-                <div class="
-            group
-            bg-white
-            rounded-2xl
-            p-7
-            border
-            border-gray-200
-            hover:border-blue-900
-            hover:shadow-xl
-            transition
-            ">
-
-
-                    <div class="
-                w-14
-                h-14
-                rounded-xl
-                bg-blue-900
-                text-white
-                flex
-                items-center
-                justify-center
-                text-2xl
-                mb-5
-                ">
+                <div class="group bg-white rounded-2xl p-7 border border-gray-200 hover:border-blue-900 hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-compass-drafting"></i>
 
@@ -435,41 +218,19 @@ require "config/seo.php";
 
 
                     <h3 class="text-xl font-bold">
-                        Structure
+                        <?= $text['home_service_structure_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Structural engineering
-                        and building safety solutions.
+                        <?= $text['home_service_structure_description']; ?>
                     </p>
 
 
                 </div>
                 <!-- MEP -->
-                <div class="
-            group
-            bg-white
-            rounded-2xl
-            p-7
-            border
-            border-gray-200
-            hover:border-blue-900
-            hover:shadow-xl
-            transition
-            ">
-                    <div class="
-                w-14
-                h-14
-                rounded-xl
-                bg-blue-900
-                text-white
-                flex
-                items-center
-                justify-center
-                text-2xl
-                mb-5
-                ">
+                <div class="group bg-white rounded-2xl p-7 border border-gray-200 hover:border-blue-900 hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-gears"></i>
 
@@ -477,64 +238,30 @@ require "config/seo.php";
 
 
                     <h3 class="text-xl font-bold">
-                        MEP
+                        <?= $text['home_service_mep_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Mechanical, electrical,
-                        and plumbing systems.
+                        <?= $text['home_service_mep_description']; ?>
                     </p>
 
 
                 </div>
-
-
-
-
-
                 <!-- PBG SLF -->
-
-
-                <div class="
-            group
-            bg-white
-            rounded-2xl
-            p-7
-            border
-            border-gray-200
-            hover:border-blue-900
-            hover:shadow-xl
-            transition
-            ">
-
-
-                    <div class="
-                w-14
-                h-14
-                rounded-xl
-                bg-blue-900
-                text-white
-                flex
-                items-center
-                justify-center
-                text-2xl
-                mb-5
-                ">
+                <div class="group bg-white rounded-2xl p-7 border border-gray-200 hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-file-circle-check"></i>
 
                     </div>
-
-
                     <h3 class="text-xl font-bold">
-                        PBG & SLF
+                        <?= $text['home_service_pbg_slf_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Building approval and
-                        compliance services.
+                        <?= $text['home_service_pbg_slf_description']; ?>
                     </p>
 
 
@@ -574,51 +301,17 @@ require "config/seo.php";
                         <i class="fa-solid fa-pen-ruler"></i>
 
                     </div>
-
-
                     <h3 class="text-xl font-bold">
-                        Design
+                        <?= $text['home_service_design_title']; ?>
                     </h3>
-
-
                     <p class="mt-3 text-gray-600 text-sm">
-                        Detailed engineering
-                        design development.
+                        <?= $text['home_service_design_description']; ?>
                     </p>
-
-
                 </div>
 
-
-
-
-
                 <!-- Checking -->
-
-
-                <div class="
-                    group
-                    bg-white
-                    rounded-2xl
-                    p-7
-                    border
-                    hover:shadow-xl
-                    transition
-                    ">
-
-
-                    <div class="
-                        w-14
-                        h-14
-                        rounded-xl
-                        bg-blue-900
-                        text-white
-                        flex
-                        items-center
-                        justify-center
-                        text-2xl
-                        mb-5
-                        ">
+                <div class="group bg-white rounded-2xl p-7 border hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-magnifying-glass-chart"></i>
 
@@ -626,45 +319,21 @@ require "config/seo.php";
 
 
                     <h3 class="text-xl font-bold">
-                        Checking
+                        <?= $text['home_service_checking_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Technical review and
-                        quality checking.
+                        <?= $text['home_service_checking_description']; ?>
                     </p>
 
 
                 </div>
-
-
-
-
                 <!-- Review -->
 
 
-                <div class="group bg-white
-                    rounded-2xl
-                    p-7
-                    border
-                    hover:shadow-xl
-                    transition
-                    ">
-
-
-                    <div class="
-                        w-14
-                        h-14
-                        rounded-xl
-                        bg-blue-900
-                        text-white
-                        flex
-                        items-center
-                        justify-center
-                        text-2xl
-                        mb-5
-                        ">
+                <div class="group bg-white rounded-2xl p-7 border hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-list-check"></i>
 
@@ -672,40 +341,20 @@ require "config/seo.php";
 
 
                     <h3 class="text-xl font-bold">
-                        Review
+                        <?= $text['home_service_review_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Engineering assessment
-                        and evaluation.
+                        <?= $text['home_service_review_description']; ?>
                     </p>
 
 
                 </div>
-                <!-- tambahan  -->
+                <!-- Construction Management -->
 
-                <div class="group bg-white
-                    rounded-2xl
-                    p-7
-                    border
-                    hover:shadow-xl
-                    transition
-                    ">
-
-
-                    <div class="
-                        w-14
-                        h-14
-                        rounded-xl
-                        bg-blue-900
-                        text-white
-                        flex
-                        items-center
-                        justify-center
-                        text-2xl
-                        mb-5
-                        ">
+                <div class="group bg-white rounded-2xl p-7 border hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-hard-hat"></i>
 
@@ -713,38 +362,18 @@ require "config/seo.php";
 
 
                     <h3 class="text-xl font-bold">
-                        Manajemen Konstruksi
+                        <?= $text['home_service_construction_management_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Perencanaan, pengawasan,
-                        dan koordinasi proyek konstruksi.
+                        <?= $text['home_service_construction_management_description']; ?>
                     </p>
 
 
                 </div>
-                <div class="group bg-white
-                    rounded-2xl
-                    p-7
-                    border
-                    hover:shadow-xl
-                    transition
-                    ">
-
-
-                    <div class="
-                        w-14
-                        h-14
-                        rounded-xl
-                        bg-blue-900
-                        text-white
-                        flex
-                        items-center
-                        justify-center
-                        text-2xl
-                        mb-5
-                        ">
+                <div class="group bg-white rounded-2xl p-7 border hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-calculator"></i>
 
@@ -752,38 +381,18 @@ require "config/seo.php";
 
 
                     <h3 class="text-xl font-bold">
-                        Estimator
+                        <?= $text['home_service_estimator_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Estimasi biaya konstruksi
-                        dan perencanaan anggaran.
+                        <?= $text['home_service_estimator_description']; ?>
                     </p>
 
 
                 </div>
-                <div class="group bg-white
-                    rounded-2xl
-                    p-7
-                    border
-                    hover:shadow-xl
-                    transition
-                    ">
-
-
-                    <div class="
-                        w-14
-                        h-14
-                        rounded-xl
-                        bg-blue-900
-                        text-white
-                        flex
-                        items-center
-                        justify-center
-                        text-2xl
-                        mb-5
-                        ">
+                <div class="group bg-white rounded-2xl p-7 border hover:shadow-xl transition">
+                    <div class="w-14 h-14 rounded-xl bg-blue-900 text-white flex items-center justify-center text-2xl mb-5">
 
                         <i class="fa-solid fa-ruler-combined"></i>
 
@@ -791,13 +400,12 @@ require "config/seo.php";
 
 
                     <h3 class="text-xl font-bold">
-                        Quantity Surveyor
+                        <?= $text['home_service_quantity_surveyor_title']; ?>
                     </h3>
 
 
                     <p class="mt-3 text-gray-600 text-sm">
-                        Pengukuran kuantitas bahan
-                        dan analisis biaya konstruksi.
+                        <?= $text['home_service_quantity_surveyor_description']; ?>
                     </p>
 
 
@@ -827,7 +435,7 @@ require "config/seo.php";
             hover:bg-blue-800
             transition
             ">
-                View Details Services →
+                <?= $text['home_services_button']; ?> →
             </a>
 
         </div>
@@ -856,7 +464,7 @@ font-bold
 mb-12
 ">
 
-                Why Choose SJCM?
+                <?= $text['home_why_title']; ?>
 
             </h2>
 
@@ -872,14 +480,13 @@ gap-10
 
                     <h3 class="font-bold text-xl">
 
-                        Professional Team
+                        <?= $text['home_why_team_title']; ?>
 
                     </h3>
 
                     <p class="mt-3 text-gray-600">
 
-                        Supported by experienced engineering
-                        and administration professionals.
+                        <?= $text['home_why_team_description']; ?>
 
                     </p>
 
@@ -891,15 +498,13 @@ gap-10
 
                     <h3 class="font-bold text-xl">
 
-                        Integrated Services
+                        <?= $text['home_why_integrated_title']; ?>
 
                     </h3>
 
                     <p class="mt-3 text-gray-600">
 
-                        From planning,
-                        design checking,
-                        until building compliance.
+                        <?= $text['home_why_integrated_description']; ?>
 
                     </p>
 
@@ -911,14 +516,13 @@ gap-10
 
                     <h3 class="font-bold text-xl">
 
-                        Quality Commitment
+                        <?= $text['home_why_quality_title']; ?>
 
                     </h3>
 
                     <p class="mt-3 text-gray-600">
 
-                        Delivering accurate,
-                        efficient, and reliable solutions.
+                        <?= $text['home_why_quality_description']; ?>
 
                     </p>
 
@@ -947,8 +551,7 @@ text-4xl
 font-bold
 ">
 
-            Let's Build Your Project
-            With Confidence
+            <?= $text['home_cta_title']; ?>
 
         </h2>
 
@@ -958,7 +561,7 @@ mt-4
 text-blue-100
 ">
 
-            Consult our engineering team today.
+            <?= $text['home_cta_description']; ?>
 
         </p>
 
@@ -975,7 +578,7 @@ rounded-full
 font-semibold
 ">
 
-            Contact Us
+            <?= $text['home_cta_button']; ?>
 
         </a>
 
