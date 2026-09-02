@@ -30,8 +30,8 @@ function addRateLimit(string $ip): void
     $attempts[] = $now;
 
     if (count($attempts) > 5) {
-        $_SESSION['form_error'] = 'Terlalu banyak permintaan. Silakan coba beberapa menit lagi.';
-        header('Location: contact.php');
+        $_SESSION['form_error'] = 'Too many requests. Please try again in a few minutes.';
+        header('Location: contact.php#contact-form-section');
         exit;
     }
 
@@ -41,7 +41,7 @@ function addRateLimit(string $ip): void
 function redirectBack(string $message, string $type = 'error'): void
 {
     $_SESSION['form_' . $type] = $message;
-    header('Location: contact.php');
+    header('Location: contact.php#contact-form-section');
     exit;
 }
 
@@ -74,7 +74,12 @@ function smtpSend(string $fromEmail, string $fromName, string $toEmail, string $
     $username = $config['smtp_username'];
     $password = $config['smtp_password'];
 
-    $stream = fsockopen($host, $port, $errno, $errstr, 30);
+    $connectionHost = $host;
+    if ($encryption === 'ssl') {
+        $connectionHost = 'ssl://' . $host;
+    }
+
+    $stream = fsockopen($connectionHost, $port, $errno, $errstr, 30);
     if (!$stream) {
         return false;
     }
@@ -87,14 +92,14 @@ function smtpSend(string $fromEmail, string $fromName, string $toEmail, string $
         return false;
     }
 
-    fwrite($stream, "EHLO " . $host . "\r\n");
-    $response = readSmtpResponse($stream);
-    if (substr($response, 0, 3) !== '250') {
-        fclose($stream);
-        return false;
-    }
-
     if ($encryption === 'tls') {
+        fwrite($stream, "EHLO " . $host . "\r\n");
+        $response = readSmtpResponse($stream);
+        if (substr($response, 0, 3) !== '250') {
+            fclose($stream);
+            return false;
+        }
+
         fwrite($stream, "STARTTLS\r\n");
         $response = readSmtpResponse($stream);
         if (substr($response, 0, 3) !== '220') {
@@ -106,13 +111,13 @@ function smtpSend(string $fromEmail, string $fromName, string $toEmail, string $
             fclose($stream);
             return false;
         }
+    }
 
-        fwrite($stream, "EHLO " . $host . "\r\n");
-        $response = readSmtpResponse($stream);
-        if (substr($response, 0, 3) !== '250') {
-            fclose($stream);
-            return false;
-        }
+    fwrite($stream, "EHLO " . $host . "\r\n");
+    $response = readSmtpResponse($stream);
+    if (substr($response, 0, 3) !== '250') {
+        fclose($stream);
+        return false;
     }
 
     fwrite($stream, "AUTH LOGIN\r\n");
@@ -183,11 +188,11 @@ function smtpSend(string $fromEmail, string $fromName, string $toEmail, string $
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    redirectBack('Permintaan tidak valid.');
+    redirectBack('Invalid request.');
 }
 
 if (!empty($_POST['website'])) {
-    redirectBack('Permintaan ditolak.');
+    redirectBack('Request rejected.');
 }
 
 $ip = getClientIp();
@@ -195,7 +200,7 @@ addRateLimit($ip);
 
 $submittedAt = isset($_POST['ts']) ? (int) $_POST['ts'] : 0;
 if ($submittedAt > 0 && (time() - $submittedAt) < 3) {
-    redirectBack('Form terlalu cepat dikirim, mohon tunggu beberapa detik.');
+    redirectBack('The form was sent too quickly. Please wait a few seconds and try again.');
 }
 
 $name = trim((string) ($_POST['name'] ?? ''));
@@ -205,19 +210,19 @@ $message = trim((string) ($_POST['message'] ?? ''));
 $captchaToken = trim((string) ($_POST['g-recaptcha-response'] ?? ''));
 
 if ($name === '' || $email === '' || $phone === '' || $message === '') {
-    redirectBack('Semua field wajib diisi.');
+    redirectBack('All fields are required.');
 }
 
 if (strlen($name) < 2 || strlen($message) < 10) {
-    redirectBack('Data form tidak valid. Mohon cek kembali isian Anda.');
+    redirectBack('The form data is invalid. Please check your input and try again.');
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    redirectBack('Format email tidak valid.');
+    redirectBack('Email format is invalid.');
 }
 
 if (!preg_match('/^[0-9+\-\s()]{8,20}$/', $phone)) {
-    redirectBack('Nomor telepon tidak valid.');
+    redirectBack('Phone number is invalid.');
 }
 
 $captchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
@@ -229,12 +234,12 @@ $captchaPayload = http_build_query([
 
 $captchaResponse = @file_get_contents($captchaUrl . '?' . $captchaPayload);
 if ($captchaResponse === false) {
-    redirectBack('Verifikasi keamanan gagal. Silakan coba lagi.');
+    redirectBack('Security verification failed. Please try again.');
 }
 
 $captchaData = json_decode($captchaResponse, true);
 if (!is_array($captchaData) || empty($captchaData['success']) || ($captchaData['score'] ?? 0) < 0.5) {
-    redirectBack('Verifikasi keamanan gagal. Coba lagi dalam beberapa saat.');
+    redirectBack('Security verification failed. Please try again in a moment.');
 }
 
 $subject = 'SJCM Contact Form: ' . $name;
@@ -245,9 +250,9 @@ $body .= "IP: {$ip}\n\n";
 $body .= "Pesan:\n{$message}\n";
 
 if (!smtpSend($mailConfig['smtp_username'], 'SJCM Website', $mailConfig['recipient_email'], $subject, $body)) {
-    redirectBack('Maaf, email gagal dikirim. Silakan coba beberapa saat lagi.');
+    redirectBack('Sorry, the email could not be sent. Please try again later.');
 }
 
-$_SESSION['form_success'] = 'Terima kasih, pesan Anda berhasil dikirim. Tim SJCM akan segera membalas.';
-header('Location: contact.php');
+$_SESSION['form_success'] = 'Thank you. Your message has been sent successfully. Our team will contact you soon.';
+header('Location: contact.php#contact-form-section');
 exit;

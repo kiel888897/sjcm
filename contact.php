@@ -293,14 +293,14 @@ unset($_SESSION['form_success'], $_SESSION['form_error']);
 
 
     </section>
-    <section class="py-24 bg-gray-50">
+    <section id="contact-form-section" class="py-24 bg-gray-50">
 
         <div class="max-w-2xl mx-auto px-6">
 
             <h2 class="text-3xl font-bold text-center mb-8"><?= $text['contact_form_heading'] ?? 'Send Us a Message'; ?></h2>
 
             <?php if ($statusMessage): ?>
-                <div class="mb-6 rounded-lg border px-4 py-3 text-sm <?= strpos($statusMessage, 'berhasil') !== false || strpos($statusMessage, 'success') !== false || strpos($statusMessage, 'Thank you') !== false ? 'border-green-200 bg-green-50 text-green-700' : 'border-red-200 bg-red-50 text-red-700'; ?>">
+                <div data-form-status class="mb-6 rounded-lg border px-4 py-3 text-sm <?= strpos(strtolower($statusMessage), 'success') !== false || strpos(strtolower($statusMessage), 'thank you') !== false ? 'border-green-200 bg-green-50 text-green-700' : 'border-red-200 bg-red-50 text-red-700'; ?>">
                     <?= htmlspecialchars($statusMessage, ENT_QUOTES, 'UTF-8'); ?>
                 </div>
             <?php endif; ?>
@@ -332,6 +332,14 @@ unset($_SESSION['form_success'], $_SESSION['form_error']);
             const form = document.getElementById('contactForm');
             const tokenField = document.getElementById('g-recaptcha-response');
             const siteKey = '<?= htmlspecialchars($mailConfig['site_key'], ENT_QUOTES, 'UTF-8'); ?>';
+            const statusBox = document.querySelector('[data-form-status]');
+
+            if (statusBox) {
+                statusBox.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
 
             if (!form || !tokenField || !siteKey) {
                 return;

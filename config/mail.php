@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'smtp_host' => getenv('SJCM_SMTP_HOST') ?: 'smtp.gmail.com',
-    'smtp_port' => (int) (getenv('SJCM_SMTP_PORT') ?: 587),
-    'smtp_encryption' => getenv('SJCM_SMTP_ENCRYPTION') ?: 'tls',
+    'smtp_host' => getenv('SJCM_SMTP_HOST') ?: 'mail.sjcm4u.com',
+    'smtp_port' => (int) (getenv('SJCM_SMTP_PORT') ?: 465),
+    'smtp_encryption' => getenv('SJCM_SMTP_ENCRYPTION') ?: 'ssl',
     'smtp_username' => getenv('SJCM_SMTP_USERNAME') ?: 'admin@sjcm4u.com',
     'smtp_password' => getenv('SJCM_SMTP_PASSWORD') ?: 'Tv.Q3,+q6O%-^TC3',
     'recipient_email' => getenv('SJCM_TO_EMAIL') ?: 'admin@sjcm4u.com',
