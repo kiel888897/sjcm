@@ -14,8 +14,8 @@ if (!isset($text) || !is_array($text)) {
     ];
 }
 ?>
-<a href="https://wa.me/628156897486" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white shadow-xl flex items-center justify-center text-3xl hover:bg-green-600 transition z-50" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
+<a href="https://wa.me/628156897486" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-green-500 text-white shadow-xl flex items-center justify-center text-3xl hover:bg-green-600 transition z-50" target="_blank" rel="noopener noreferrer" aria-label="Chat with SJCM on WhatsApp" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
 </a>
 <!-- footer -->
 <footer class="bg-blue-950 text-white pt-16 pb-8">
@@ -78,14 +78,14 @@ if (!isset($text) || !is_array($text)) {
                 <?php echo $text['footer_connect']; ?>
             </p>
             <div class="flex gap-4">
-                <a href="https://www.facebook.com/share/19DmYABoMJ/" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition">
-                    <i class="fa-brands fa-facebook-f"></i>
+                <a href="https://www.facebook.com/share/19DmYABoMJ/" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 transition" target="_blank" rel="noopener noreferrer" aria-label="Visit SJCM on Facebook" title="Facebook">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-600 transition">
-                    <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-pink-600 transition" target="_blank" rel="noopener noreferrer" aria-label="Visit SJCM on Instagram" title="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-500 transition">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-500 transition" target="_blank" rel="noopener noreferrer" aria-label="Visit SJCM on LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                 </a>
                 <!-- <a href="https://wa.me/628156897486" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition">
                     <i class="fa-brands fa-whatsapp"></i>

@@ -129,6 +129,8 @@ gap-9
 
 
                 <a href="about.php"
+                    aria-label="About SJCM"
+                    title="About SJCM"
                     class="
 nav-item
 <?= $currentPage == 'about.php' ? 'active' : '' ?>
@@ -363,7 +365,8 @@ nav-item
 
 
                 <a href="about.php"
-
+                    aria-label="About SJCM"
+                    title="About SJCM"
                     class="
 block
 nav-item
