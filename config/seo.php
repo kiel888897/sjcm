@@ -4,7 +4,7 @@ $siteUrl = 'https://sjcm4u.com';
 $currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $currentPage = basename($currentPath) ?: 'index.php';
 $defaultKeywords = 'SJCM, PT Sinergi Jaya Cipta Mandiri, arsitek Bali, engineering consultant Bali, konsultan teknik Bali, architecture consultant, structure consultant, MEP consultant, PBG SLF, construction consultant';
-$ogImageUrl = rtrim($siteUrl, '/') . '/assets/images/og-image.jpg';
+$ogImageUrl = rtrim($siteUrl, '/') . '/assets/images/og-images.jpg';
 
 $seoPages = [
     'index.php' => [
