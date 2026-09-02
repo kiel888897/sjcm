@@ -1,6 +1,9 @@
 <?php
 require "config/language.php";
 require "config/seo.php";
+$mailConfig = require __DIR__ . "/config/mail.php";
+$statusMessage = $_SESSION['form_success'] ?? $_SESSION['form_error'] ?? null;
+unset($_SESSION['form_success'], $_SESSION['form_error']);
 ?>
 <!DOCTYPE html>
 <html lang="<?= htmlspecialchars($lang, ENT_QUOTES, 'UTF-8'); ?>">
@@ -28,6 +31,7 @@ require "config/seo.php";
 
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?= htmlspecialchars($mailConfig['site_key'], ENT_QUOTES, 'UTF-8'); ?>"></script>
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -295,8 +299,13 @@ require "config/seo.php";
 
             <h2 class="text-3xl font-bold text-center mb-8"><?= $text['contact_form_heading'] ?? 'Send Us a Message'; ?></h2>
 
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="grid gap-6">
+            <?php if ($statusMessage): ?>
+                <div class="mb-6 rounded-lg border px-4 py-3 text-sm <?= strpos($statusMessage, 'berhasil') !== false || strpos($statusMessage, 'success') !== false || strpos($statusMessage, 'Thank you') !== false ? 'border-green-200 bg-green-50 text-green-700' : 'border-red-200 bg-red-50 text-red-700'; ?>">
+                    <?= htmlspecialchars($statusMessage, ENT_QUOTES, 'UTF-8'); ?>
+                </div>
+            <?php endif; ?>
 
+            <form id="contactForm" action="send-mail.php" method="POST" class="grid gap-6" novalidate>
                 <input type="text" name="name" placeholder="<?= $text['contact_form_name'] ?? 'Your Name'; ?>" required class="border p-4 rounded-lg w-full">
 
                 <input type="email" name="email" placeholder="<?= $text['contact_form_email'] ?? 'Your Email'; ?>" required class="border p-4 rounded-lg w-full">
@@ -305,16 +314,52 @@ require "config/seo.php";
 
                 <textarea name="message" rows="5" placeholder="<?= $text['contact_form_message'] ?? 'Your Message'; ?>" required class="border p-4 rounded-lg w-full"></textarea>
 
+                <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                <input type="hidden" name="ts" value="<?= time(); ?>">
+                <input type="text" name="website" class="hidden" tabindex="-1" autocomplete="off">
+
                 <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800">
                     <?= $text['contact_form_button'] ?? 'Send Message'; ?>
                 </button>
-
             </form>
 
         </div>
 
     </section>
     <?php include 'footer.php' ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const tokenField = document.getElementById('g-recaptcha-response');
+            const siteKey = '<?= htmlspecialchars($mailConfig['site_key'], ENT_QUOTES, 'UTF-8'); ?>';
+
+            if (!form || !tokenField || !siteKey) {
+                return;
+            }
+
+            const updateToken = function() {
+                if (typeof grecaptcha === 'undefined') {
+                    return;
+                }
+
+                grecaptcha.ready(function() {
+                    grecaptcha.execute(siteKey, {
+                        action: 'contact'
+                    }).then(function(token) {
+                        tokenField.value = token;
+                    });
+                });
+            };
+
+            updateToken();
+
+            form.addEventListener('submit', function() {
+                if (!tokenField.value) {
+                    updateToken();
+                }
+            });
+        });
+    </script>
     <script src="js/main.js"></script>
 
 
