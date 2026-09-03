@@ -252,7 +252,7 @@ $waLink = 'https://wa.me/' . $waPhone . '?text=' . rawurlencode($waMessage);
 $body = "Nama: {$name}\n";
 $body .= "Email: {$email}\n";
 $body .= "Telepon: {$phone}\n";
-$body .= "WhatsApp: {$waLink}\n";
+$body .= "WhatsApp: [here]({$waLink})\n";
 $body .= "IP: {$ip}\n\n";
 $body .= "Pesan:\n{$message}\n";
 
