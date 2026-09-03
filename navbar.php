@@ -198,59 +198,24 @@ gap-6
                 <!-- LANGUAGE -->
 
 
-                <div class="
-flex
-items-center
-gap-2
-text-sm
-font-semibold
-">
-
-
-                    <i class="
-fa-solid
-fa-globe
-text-blue-900
-text-sm
-"></i>
-
-
+                <div class="flex items-center gap-2 text-sm font-semibold whitespace-nowrap" aria-label="Language selector">
+                    <i class="fa-solid fa-globe text-blue-900 text-sm" aria-hidden="true"></i>
 
                     <a href="?lang=en"
-                        class="
-transition
-<?= $lang == 'en'
-    ? 'text-blue-950'
-    : 'text-gray-400 hover:text-blue-900'
-?>
-">
-
+                        aria-label="Switch to English"
+                        title="English"
+                        class="transition rounded px-1.5 py-1 <?= $lang == 'en' ? 'text-blue-950 font-bold' : 'text-gray-700 hover:text-blue-900' ?>">
                         EN
-
                     </a>
 
-
-
-                    <span class="text-gray-300">
-                        |
-                    </span>
-
-
+                    <span class="text-gray-400" aria-hidden="true">|</span>
 
                     <a href="?lang=id"
-                        class="
-transition
-<?= $lang == 'id'
-    ? 'text-blue-950'
-    : 'text-gray-400 hover:text-blue-900'
-?>
-">
-
+                        aria-label="Pindah ke Bahasa Indonesia"
+                        title="Indonesia"
+                        class="transition rounded px-1.5 py-1 <?= $lang == 'id' ? 'text-blue-950 font-bold' : 'text-gray-700 hover:text-blue-900' ?>">
                         ID
-
                     </a>
-
-
                 </div>
 
 
@@ -420,62 +385,24 @@ nav-item
                 <!-- LANGUAGE MOBILE -->
 
 
-                <div class="
-flex
-items-center
-gap-3
-pt-3
-border-t
-border-gray-100
-">
-
-
-                    <i class="
-fa-solid
-fa-globe
-text-blue-900
-"></i>
-
-
+                <div class="flex items-center justify-center gap-3 pt-3 border-t border-gray-100 text-sm font-semibold" aria-label="Language selector mobile">
+                    <i class="fa-solid fa-globe text-blue-900" aria-hidden="true"></i>
 
                     <a href="?lang=en"
-
-                        class="
-font-semibold
-<?= $lang == 'en'
-    ? 'text-blue-950'
-    : 'text-gray-400'
-?>
-">
-
+                        aria-label="Switch to English"
+                        title="English"
+                        class="rounded px-2 py-1 <?= $lang == 'en' ? 'text-blue-950 font-bold' : 'text-gray-700' ?>">
                         EN
-
                     </a>
 
-
-
-                    <span class="text-gray-300">
-                        |
-                    </span>
-
-
+                    <span class="text-gray-400" aria-hidden="true">|</span>
 
                     <a href="?lang=id"
-
-                        class="
-font-semibold
-<?= $lang == 'id'
-    ? 'text-blue-950'
-    : 'text-gray-400'
-?>
-">
-
+                        aria-label="Pindah ke Bahasa Indonesia"
+                        title="Indonesia"
+                        class="rounded px-2 py-1 <?= $lang == 'id' ? 'text-blue-950 font-bold' : 'text-gray-700' ?>">
                         ID
-
                     </a>
-
-
-
                 </div>
 
 
