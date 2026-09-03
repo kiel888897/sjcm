@@ -19,7 +19,7 @@ return [
     "about_section_heading" => "Construction & Consulting Services",
     "about_section_text_1" => "PT Sinergi Jaya Cipta Mandiri is an engineering consultancy providing building planning, design, and construction supervision services.",
     "about_section_text_2" => "Through an integrated engineering approach, we provide professional solutions in architecture, structure, mechanical electrical plumbing (MEP), PBG, SLF, and construction consulting.",
-    "learn_more" => "Learn More",
+    "learn_more" => "Details SJCM",
     "home_services_title" => "Our Services",
     "home_services_heading" => "Integrated Engineering Consultancy",
     "home_services_description" => "Professional solutions for building planning, design, compliance, and construction management.",

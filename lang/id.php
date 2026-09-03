@@ -19,7 +19,7 @@ return [
     "about_section_heading" => "Layanan Konstruksi & Konsultasi",
     "about_section_text_1" => "PT Sinergi Jaya Cipta Mandiri merupakan perusahaan konsultan teknik yang menyediakan layanan perencanaan, desain, dan pengawasan konstruksi bangunan.",
     "about_section_text_2" => "Dengan pendekatan teknik yang terintegrasi, kami memberikan solusi profesional dalam bidang arsitektur, struktur, mekanikal elektrikal plambing (MEP), PBG, SLF, serta konsultasi konstruksi.",
-    "learn_more" => "Selengkapnya",
+    "learn_more" => "Detail SJCM",
     "home_services_title" => "Layanan Kami",
     "home_services_heading" => "Konsultasi Teknik Terintegrasi",
     "home_services_description" => "Solusi profesional untuk perencanaan bangunan, desain, kepatuhan, dan manajemen konstruksi.",

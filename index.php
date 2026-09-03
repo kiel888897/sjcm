@@ -168,7 +168,7 @@ require "config/seo.php";
                         </p>
 
 
-                        <a href="about.php" aria-label="Learn more about SJCM" title="Learn more about SJCM" class="inline-flex items-center gap-3 mt-10 bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition shadow-lg">
+                        <a href="about.php" aria-label="Learn more about SJCM construction and consulting services" title="Learn more about SJCM construction and consulting services" class="inline-flex items-center gap-3 mt-10 bg-blue-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition shadow-lg">
                             <?= $text['learn_more']; ?>
                             <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                         </a>
