@@ -263,7 +263,10 @@ duration-300
             <button
 
                 id="mobile-menu-button"
-
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
                 class="
 lg:hidden
 text-blue-950
@@ -271,7 +274,7 @@ text-2xl
 focus:outline-none
 ">
 
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
 
 
             </button>
