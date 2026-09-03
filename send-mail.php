@@ -167,7 +167,7 @@ function smtpSend(string $fromEmail, string $fromName, string $toEmail, string $
         'To: ' . $toEmail,
         'Subject: ' . $subject,
         'MIME-Version: 1.0',
-        'Content-Type: text/plain; charset=UTF-8',
+        'Content-Type: text/html; charset=UTF-8',
         'Content-Transfer-Encoding: base64',
         '',
     ];
@@ -249,12 +249,12 @@ if (strlen($waPhone) > 0 && $waPhone[0] === '0') {
 }
 $waMessage = "Hello {$name}, I am from sjcm4u.com. Thank you for contacting us. We have received your message.";
 $waLink = 'https://wa.me/' . $waPhone . '?text=' . rawurlencode($waMessage);
-$body = "Nama: {$name}\n";
-$body .= "Email: {$email}\n";
-$body .= "Telepon: {$phone}\n";
-$body .= "WhatsApp: [here]({$waLink})\n";
-$body .= "IP: {$ip}\n\n";
-$body .= "Pesan:\n{$message}\n";
+$body = "<p><strong>Name:</strong> " . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . "</p>";
+$body .= "<p><strong>Email:</strong> " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "</p>";
+$body .= "<p><strong>Phone:</strong> " . htmlspecialchars($phone, ENT_QUOTES, 'UTF-8') . "</p>";
+$body .= "<p><strong>WhatsApp:</strong> <a href=\"" . htmlspecialchars($waLink, ENT_QUOTES, 'UTF-8') . "\" style=\"display:inline-block;padding:10px 18px;background:#25D366;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;\">Here</a></p>";
+$body .= "<p><strong>IP:</strong> " . htmlspecialchars($ip, ENT_QUOTES, 'UTF-8') . "</p>";
+$body .= "<p><strong>Message:</strong><br>" . nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8')) . "</p>";
 
 if (!smtpSend($mailConfig['smtp_username'], 'SJCM Website', $mailConfig['recipient_email'], $subject, $body)) {
     redirectBack('Sorry, the email could not be sent. Please try again later.');
