@@ -249,12 +249,14 @@ if (strlen($waPhone) > 0 && $waPhone[0] === '0') {
 }
 $waMessage = "Hello {$name}, I am from sjcm4u.com. Thank you for contacting us. We have received your message.";
 $waLink = 'https://wa.me/' . $waPhone . '?text=' . rawurlencode($waMessage);
-$body = "<p><strong>Name:</strong> " . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . "</p>";
-$body .= "<p><strong>Email:</strong> " . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . "</p>";
-$body .= "<p><strong>Phone:</strong> " . htmlspecialchars($phone, ENT_QUOTES, 'UTF-8') . "</p>";
-$body .= "<p><strong>WhatsApp:</strong> <a href=\"" . htmlspecialchars($waLink, ENT_QUOTES, 'UTF-8') . "\" style=\"display:inline-block;padding:10px 18px;background:#25D366;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;\">Here</a></p>";
-$body .= "<p><strong>IP:</strong> " . htmlspecialchars($ip, ENT_QUOTES, 'UTF-8') . "</p>";
-$body .= "<p><strong>Message:</strong><br>" . nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8')) . "</p>";
+$body = '<table cellpadding="8" cellspacing="0" border="0" style="font-family:Arial, sans-serif; font-size:14px; color:#1f2937; line-height:1.6; width:100%; max-width:700px; border-collapse:collapse;">';
+$body .= '<tr><td style="width:140px; font-weight:bold; vertical-align:top; border-bottom:1px solid #e5e7eb;">Name</td><td style="border-bottom:1px solid #e5e7eb;">' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '</td></tr>';
+$body .= '<tr><td style="width:140px; font-weight:bold; vertical-align:top; border-bottom:1px solid #e5e7eb;">Email</td><td style="border-bottom:1px solid #e5e7eb;">' . htmlspecialchars($email, ENT_QUOTES, 'UTF-8') . '</td></tr>';
+$body .= '<tr><td style="width:140px; font-weight:bold; vertical-align:top; border-bottom:1px solid #e5e7eb;">Phone</td><td style="border-bottom:1px solid #e5e7eb;">' . htmlspecialchars($phone, ENT_QUOTES, 'UTF-8') . '</td></tr>';
+$body .= '<tr><td style="width:140px; font-weight:bold; vertical-align:top; border-bottom:1px solid #e5e7eb;">WhatsApp</td><td style="border-bottom:1px solid #e5e7eb;"><a href="' . htmlspecialchars($waLink, ENT_QUOTES, 'UTF-8') . '" style="display:inline-block;padding:10px 18px;background:#25D366;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;">Here</a></td></tr>';
+$body .= '<tr><td style="width:140px; font-weight:bold; vertical-align:top; border-bottom:1px solid #e5e7eb;">IP</td><td style="border-bottom:1px solid #e5e7eb;">' . htmlspecialchars($ip, ENT_QUOTES, 'UTF-8') . '</td></tr>';
+$body .= '<tr><td style="width:140px; font-weight:bold; vertical-align:top;">Message</td><td>' . nl2br(htmlspecialchars($message, ENT_QUOTES, 'UTF-8')) . '</td></tr>';
+$body .= '</table>';
 
 if (!smtpSend($mailConfig['smtp_username'], 'SJCM Website', $mailConfig['recipient_email'], $subject, $body)) {
     redirectBack('Sorry, the email could not be sent. Please try again later.');
