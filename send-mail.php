@@ -243,9 +243,16 @@ if (!is_array($captchaData) || empty($captchaData['success']) || ($captchaData['
 }
 
 $subject = 'SJCM Contact Form: ' . $name;
+$waPhone = preg_replace('/\D+/', '', $phone);
+if (strlen($waPhone) > 0 && $waPhone[0] === '0') {
+    $waPhone = '62' . substr($waPhone, 1);
+}
+$waMessage = "Hello {$name}, I am from sjcm4u.com. Thank you for contacting us. We have received your message.";
+$waLink = 'https://wa.me/' . $waPhone . '?text=' . rawurlencode($waMessage);
 $body = "Nama: {$name}\n";
 $body .= "Email: {$email}\n";
 $body .= "Telepon: {$phone}\n";
+$body .= "WhatsApp: {$waLink}\n";
 $body .= "IP: {$ip}\n\n";
 $body .= "Pesan:\n{$message}\n";
 
