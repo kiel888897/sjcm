@@ -1,4 +1,8 @@
 <?php
+require_once __DIR__ . '/config/visitor-counter.php';
+
+$visitorCount = getUniqueVisitorCount();
+
 if (!isset($text) || !is_array($text)) {
     $text = [
         'footer_company' => 'Company',
@@ -10,6 +14,7 @@ if (!isset($text) || !is_array($text)) {
         'footer_pbg_slf' => 'PBG & SLF',
         'footer_follow' => 'Follow Us',
         'footer_connect' => 'Connect with us',
+        'footer_visitors' => 'Unique visitors',
         'footer_rights' => '© 2024 SJCM. All rights reserved.',
     ];
 }
@@ -90,6 +95,19 @@ if (!isset($text) || !is_array($text)) {
                 <!-- <a href="https://wa.me/628156897486" class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 transition">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a> -->
+            </div>
+            <div class="mt-7 flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 shadow-inner shadow-black/10" aria-label="<?php echo htmlspecialchars($text['footer_visitors'] ?? 'Unique visitors', ENT_QUOTES, 'UTF-8'); ?>">
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/20 text-blue-200">
+                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                </span>
+                <div class="min-w-0">
+                    <p class="text-xs font-medium uppercase tracking-wider text-blue-200">
+                        <?php echo htmlspecialchars($text['footer_visitors'] ?? 'Unique visitors', ENT_QUOTES, 'UTF-8'); ?>
+                    </p>
+                    <p class="mt-0.5 text-xl font-bold leading-none text-white">
+                        <?php echo number_format($visitorCount, 0, ',', '.'); ?>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

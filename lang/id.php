@@ -176,6 +176,7 @@ return [
     "footer_pbg_slf" => "PBG & SLF",
     "footer_follow" => "Ikuti Kami",
     "footer_connect" => "Terhubung dengan SJCM",
+    "footer_visitors" => "Pengunjung unik",
     "footer_rights" => "© 2026 PT Sinergi Jaya Cipta Mandiri. Semua Hak Dilindungi."
 
 ];
