@@ -94,6 +94,10 @@ require "config/seo.php";
                         <p class="text-sm uppercase tracking-[4px] mb-1 text-blue-200">
                             <?= $text['hero_video_label'] ?? 'Architect and Engineering Consultant'; ?>
                         </p>
+                        <a href="video.php" class="inline-flex items-center gap-2 text-sm font-semibold text-white underline decoration-blue-300 underline-offset-4 hover:text-blue-200 transition">
+                            <?= $text['watch_video'] ?? 'Watch video'; ?>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
