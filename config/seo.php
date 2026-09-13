@@ -28,7 +28,7 @@ $seoPages = [
         'keywords' => 'project portfolio Bali, architecture project Bali, structure project Bali, MEP project Bali, engineering project portfolio',
     ],
     'contact.php' => [
-        'title' => 'Contact SJCM | PBG & SLF Bali Solutions',
+        'title' => 'Contact SJCM | Jasa Pengurusan IMB, MEP, PBG & SLF di Bali',
         'description' => 'Contact PT Sinergi Jaya Cipta Mandiri for architecture, structure, MEP, PBG, SLF, and construction consulting services in Bali.',
         'keywords' => 'contact SJCM, konsultasi arsitek Bali, engineering consultant Bali, desain bangunan Bali, PBG SLF consultant, contact engineering services Bali',
     ],
