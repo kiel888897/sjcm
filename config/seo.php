@@ -3,14 +3,14 @@
 $siteUrl = 'https://sjcm4u.com';
 $currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $currentPage = basename($currentPath) ?: 'index.php';
-$defaultKeywords = 'SJCM, PT Sinergi Jaya Cipta Mandiri, arsitek Bali, engineering consultant Bali, konsultan teknik Bali, architecture consultant, structure consultant, MEP consultant, PBG SLF, construction consultant';
+$defaultKeywords = 'SJCM, PT Sinergi Jaya Cipta Mandiri, konsultan PBG Bali, jasa PBG Bali, pengurusan PBG Bali, arsitek Bali, konsultan teknik Bali, MEP consultant, SLF Bali, construction consultant';
 $ogImageUrl = rtrim($siteUrl, '/') . '/assets/images/og-images.jpg';
 
 $seoPages = [
     'index.php' => [
         'title' => 'PT Sinergi Jaya Cipta Mandiri | Architect & Engineering Consultant Bali',
-        'description' => 'SJCM is a professional architecture, structure, MEP, PBG, SLF, and construction consulting firm in Bali, Indonesia. We provide engineering solutions for better building future.',
-        'keywords' => 'SJCM Bali, arsitek Bali, engineering consultant Bali, konsultan teknik Bali, architect and engineering consultant, MEP consultant, PBG SLF, construction management Bali',
+        'description' => 'SJCM is a professional konsultan PBG Bali and engineering consulting firm providing architecture, structure, MEP, SLF, and construction services in Bali, Indonesia.',
+        'keywords' => 'SJCM Bali, konsultan PBG Bali, jasa PBG Bali, pengurusan PBG Bali, arsitek Bali, konsultan teknik Bali, MEP consultant, SLF Bali, construction management Bali',
     ],
     'about.php' => [
         'title' => 'About SJCM | Engineering Consultant & Architecture Bali',
@@ -18,9 +18,9 @@ $seoPages = [
         'keywords' => 'about SJCM, profile perusahaan Bali, arsitek Bali, konsultan teknik Bali, engineering consultant Bali, architecture firm Bali',
     ],
     'services.php' => [
-        'title' => 'Engineering Services | Architecture, Structure, MEP, PBG & SLF Bali',
-        'description' => 'SJCM provides architecture, structure, MEP, PBG, SLF, design review, checking, construction management, estimator, and quantity surveyor services in Bali.',
-        'keywords' => 'architecture service Bali, structure consulting Bali, MEP consultant, PBG service Bali, SLF consultant, construction management Bali, quantity surveyor Bali',
+        'title' => 'Konsultan PBG Bali | Jasa PBG, SLF & Engineering SJCM',
+        'description' => 'SJCM menyediakan jasa konsultan PBG Bali, pendampingan pengurusan PBG dan SLF, serta layanan arsitektur, struktur, MEP, dan konstruksi untuk proyek di Bali.',
+        'keywords' => 'konsultan PBG Bali, jasa PBG Bali, pengurusan PBG Bali, konsultan SLF Bali, arsitek Bali, konsultan struktur Bali, MEP Bali, manajemen konstruksi Bali',
     ],
     'projects.php' => [
         'title' => 'Project Portfolio | Architecture, Structure & MEP Bali',
@@ -28,9 +28,9 @@ $seoPages = [
         'keywords' => 'project portfolio Bali, architecture project Bali, structure project Bali, MEP project Bali, engineering project portfolio',
     ],
     'contact.php' => [
-        'title' => 'Contact SJCM | Jasa Pengurusan IMB, MEP, PBG & SLF di Bali',
-        'description' => 'Contact PT Sinergi Jaya Cipta Mandiri for architecture, structure, MEP, PBG, SLF, and construction consulting services in Bali.',
-        'keywords' => 'contact SJCM, konsultasi arsitek Bali, engineering consultant Bali, desain bangunan Bali, PBG SLF consultant, contact engineering services Bali',
+        'title' => 'Hubungi Konsultan PBG Bali | SJCM',
+        'description' => 'Hubungi SJCM, konsultan PBG Bali, untuk konsultasi pengurusan PBG, SLF, desain arsitektur, struktur, MEP, dan kebutuhan konstruksi di Bali.',
+        'keywords' => 'hubungi konsultan PBG Bali, konsultasi PBG Bali, jasa pengurusan PBG Bali, SLF Bali, konsultan teknik Bali, SJCM',
     ],
     'video.php' => [
         'title' => 'SJCM Architecture and Engineering Consultant Video',

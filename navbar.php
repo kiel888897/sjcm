@@ -42,7 +42,7 @@ relative
 
             <!-- LOGO -->
 
-            <a href="index.php"
+            <a href="/"
                 class="
 flex
 items-center
@@ -116,7 +116,7 @@ gap-9
 ">
 
 
-                <a href="index.php"
+                <a href="/"
                     class="nav-item 
 <?= $currentPage == 'index.php' ? 'active' : '' ?>
 ">
@@ -316,7 +316,7 @@ space-y-5
 
 
 
-                <a href="index.php"
+                <a href="/"
 
                     class="
 block
