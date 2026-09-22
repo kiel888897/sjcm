@@ -40,6 +40,7 @@ $videoDescription = $text['video_page_description'] ?? 'Discover SJCM architectu
             'mainEntityOfPage' => $videoPageUrl,
         ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
     </script>
+    <?php include 'google-tag.php'; ?>
 </head>
 
 <body class="bg-slate-50 text-gray-800">

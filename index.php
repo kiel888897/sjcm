@@ -44,6 +44,7 @@ require "config/seo.php";
 
 
 
+    <?php include 'google-tag.php'; ?>
 </head>
 
 
