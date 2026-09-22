@@ -37,7 +37,6 @@ unset($_SESSION['form_success'], $_SESSION['form_error']);
 
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=<?= htmlspecialchars($mailConfig['site_key'], ENT_QUOTES, 'UTF-8'); ?>"></script>
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -254,7 +253,9 @@ unset($_SESSION['form_success'], $_SESSION['form_error']);
                         <div class="rounded-3xl overflow-hidden shadow-xl border bg-white p-3">
 
 
-                            <iframe class="w-full h-[500px] rounded-2xl"
+                            <iframe
+                                title="Lokasi kantor PT Sinergi Jaya Cipta Mandiri di Denpasar, Bali"
+                                class="w-full h-[500px] rounded-2xl"
                                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3943.995350959838!2d115.18973207501477!3d-8.691989991356477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDEnMzEuMiJTIDExNcKwMTEnMzIuMyJF!5e0!3m2!1sid!2sid!4v1787905616098!5m2!1sid!2sid"
                                 allowfullscreen=""
                                 loading="lazy"
@@ -354,25 +355,56 @@ unset($_SESSION['form_success'], $_SESSION['form_error']);
                 return;
             }
 
-            const updateToken = function() {
-                if (typeof grecaptcha === 'undefined') {
-                    return;
+            let recaptchaLoader;
+
+            const loadRecaptcha = function() {
+                if (typeof grecaptcha !== 'undefined') {
+                    return Promise.resolve();
                 }
 
-                grecaptcha.ready(function() {
-                    grecaptcha.execute(siteKey, {
-                        action: 'contact'
-                    }).then(function(token) {
-                        tokenField.value = token;
+                if (!recaptchaLoader) {
+                    recaptchaLoader = new Promise(function(resolve, reject) {
+                        const script = document.createElement('script');
+                        script.src = 'https://www.google.com/recaptcha/api.js?render=' + encodeURIComponent(siteKey);
+                        script.async = true;
+                        script.onload = resolve;
+                        script.onerror = reject;
+                        document.head.appendChild(script);
+                    });
+                }
+
+                return recaptchaLoader;
+            };
+
+            const updateToken = function() {
+                return loadRecaptcha().then(function() {
+                    return new Promise(function(resolve) {
+                        grecaptcha.ready(function() {
+                            grecaptcha.execute(siteKey, {
+                                action: 'contact'
+                            }).then(function(token) {
+                                tokenField.value = token;
+                                resolve(token);
+                            });
+                        });
                     });
                 });
             };
 
-            updateToken();
+            form.addEventListener('focusin', function() {
+                loadRecaptcha().catch(function() {});
+            }, {
+                once: true
+            });
 
-            form.addEventListener('submit', function() {
+            form.addEventListener('submit', function(event) {
                 if (!tokenField.value) {
-                    updateToken();
+                    event.preventDefault();
+                    updateToken().then(function() {
+                        form.requestSubmit();
+                    }).catch(function() {
+                        tokenField.value = '';
+                    });
                 }
             });
         });
