@@ -10,3 +10,5 @@
 
     gtag('config', 'G-K33WM6MDP7');
 </script>
+
+<script src="https://analytics.ahrefs.com/analytics.js" data-key="wf0R9vpablehOj9mQhefwQ" async></script>
