@@ -82,7 +82,7 @@ tracking-tight
 
                     <p class="
 text-xs
-text-gray-500
+text-gray-600
 mt-1
 font-medium
 tracking-wide
