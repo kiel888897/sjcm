@@ -50,9 +50,9 @@ unset($_SESSION['form_success'], $_SESSION['form_error']);
     <?php include "navbar.php" ?>
 
     <main id="main-content">
-        <section class="relative pt-44 pb-28 overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-900 text-white">
+        <section class="relative pt-44 pb-28 overflow-hidden bg-blue-950 text-white sm:bg-gradient-to-br sm:from-blue-950 sm:via-blue-900 sm:to-cyan-900">
             <!-- Decorative Background -->
-            <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 hidden opacity-10 sm:block">
                 <div class="absolute top-10 left-10 w-72 h-72 bg-cyan-400 rounded-full blur-3xl"></div>
                 <div class="absolute bottom-0 right-10 hidden w-96 h-96 bg-blue-400 rounded-full blur-3xl sm:block"></div>
             </div>
