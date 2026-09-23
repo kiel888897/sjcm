@@ -54,10 +54,10 @@ unset($_SESSION['form_success'], $_SESSION['form_error']);
             <!-- Decorative Background -->
             <div class="absolute inset-0 opacity-10">
                 <div class="absolute top-10 left-10 w-72 h-72 bg-cyan-400 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-0 right-10 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-10 hidden w-96 h-96 bg-blue-400 rounded-full blur-3xl sm:block"></div>
             </div>
             <div class="relative max-w-7xl mx-auto px-6 text-center">
-                <p class="text-cyan-300 uppercase tracking-[5px] font-semibold text-sm">
+                <p class="text-white sm:text-cyan-300 uppercase tracking-[5px] font-semibold text-sm">
                     <?= $text['contact_page_title'] ?? 'Contact Us'; ?>
                 </p>
                 <h1 class="mt-5 text-5xl md:text-6xl font-bold leading-tight">
