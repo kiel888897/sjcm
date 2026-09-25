@@ -6,6 +6,7 @@ return [
     "about" => "Tentang",
     "services" => "Layanan",
     "projects" => "Proyek",
+    "contact" => "Kontak",
     "team" => "Tim",
     "consultation" => "Konsultasi",
 

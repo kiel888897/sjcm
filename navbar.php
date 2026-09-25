@@ -170,6 +170,18 @@ nav-item
                 </a>
 
 
+                <a href="contact.php"
+                    class="
+nav-item
+<?= $currentPage == 'contact.php' ? 'active' : '' ?>
+">
+
+                    <?= $text['contact'] ?? 'Contact'; ?>
+
+
+                </a>
+
+
 
 
 
@@ -374,6 +386,20 @@ nav-item
 ">
 
                     <?= $text['projects'] ?? 'Projects'; ?>
+
+
+                </a>
+
+
+                <a href="contact.php"
+
+                    class="
+block
+nav-item
+<?= $currentPage == 'contact.php' ? 'active' : '' ?>
+">
+
+                    <?= $text['contact'] ?? 'Contact'; ?>
 
 
                 </a>

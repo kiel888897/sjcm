@@ -6,6 +6,7 @@ return [
     "about" => "About",
     "services" => "Services",
     "projects" => "Projects",
+    "contact" => "Contact",
     "team" => "Team",
     "consultation" => "Consultation",
 
