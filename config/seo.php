@@ -8,8 +8,8 @@ $ogImageUrl = rtrim($siteUrl, '/') . '/assets/images/og-images.jpg';
 
 $seoPages = [
     'index.php' => [
-        'title' => 'PT Sinergi Jaya Cipta Mandiri | Architect & Engineering Consultant Bali',
-        'description' => 'SJCM is a professional konsultan PBG Bali and engineering consulting firm providing architecture, structure, MEP, SLF, and construction services in Bali, Indonesia.',
+        'title' => 'SJCM Bali | Konsultan PBG & Engineering Consultant',
+        'description' => 'SJCM is a Bali-based PBG consultant and engineering firm for architecture, structure, MEP, SLF, and construction services.',
         'keywords' => 'SJCM Bali, konsultan PBG Bali, jasa PBG Bali, pengurusan PBG Bali, arsitek Bali, konsultan teknik Bali, MEP consultant, SLF Bali, construction management Bali',
     ],
     'about.php' => [
@@ -41,3 +41,4 @@ $seoPages = [
 
 $seo = $seoPages[$currentPage] ?? $seoPages['index.php'];
 $canonicalUrl = rtrim($siteUrl, '/') . ($currentPage === 'index.php' ? '/' : '/' . $currentPage);
+

@@ -1,6 +1,24 @@
 <?php
 require "config/language.php";
 require "config/seo.php";
+
+$escapeAttr = static fn($value) => htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+
+$architectureTitle = $text['project_architecture_title'] ?? 'Architecture Project';
+$structureTitle = $text['project_structure_title'] ?? 'Structure Project';
+$mepTitle = $text['project_mep_title'] ?? 'MEP Project';
+
+$architectureAltBase = $escapeAttr($architectureTitle . ' - SJCM Portfolio');
+$structureAltBase = $escapeAttr($structureTitle . ' - SJCM Portfolio');
+$mepAltBase = $escapeAttr($mepTitle . ' - SJCM Portfolio');
+
+$architectureSlides = array_map(static fn($i) => "assets/images/projects/arsitektur/ar{$i}.jpg", range(1, 17));
+$structureSlides = array_map(static fn($i) => "assets/images/projects/struktur/st{$i}.jpg", range(1, 14));
+$mepSlides = array_map(static fn($i) => "assets/images/projects/mep/me{$i}.jpg", range(1, 7));
+
+$architectureFallback = $architectureSlides[0];
+$structureFallback = $structureSlides[0];
+$mepFallback = $mepSlides[0];
 ?>
 <!DOCTYPE html>
 <html lang="<?= htmlspecialchars($lang, ENT_QUOTES, 'UTF-8'); ?>">
@@ -94,23 +112,15 @@ require "config/seo.php";
                 <div class="project-item bg-white rounded-3xl shadow-lg overflow-hidden grid md:grid-cols-2" data-category="residential architecture">
                     <!-- SLIDER -->
                     <div class="relative overflow-hidden h-72 md:h-96 lg:h-[450px ]">
-                        <img src="assets/images/projects/arsitektur/ar1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700">
-                        <img src="assets/images/projects/arsitektur/ar2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar4.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar5.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar6.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar7.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar8.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar9.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar10.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar11.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar12.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar13.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar14.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar15.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar16.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
-                        <img src="assets/images/projects/arsitektur/ar17.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/arsitektur/ar1.jpg'">
+                        
+                        <?php foreach ($architectureSlides as $i => $src) { ?>
+                            <img
+                                src="<?= $escapeAttr($src); ?>"
+                                alt="<?= $architectureAltBase; ?><?= $i ? ' - Photo ' . ($i + 1) : ''; ?>"
+                                class="project-slide w-full h-full object-cover absolute transition duration-700<?= $i ? ' opacity-0' : ''; ?>"
+                                <?= $i ? 'onerror="this.src=\'' . $escapeAttr($architectureFallback) . '\'"' : ''; ?>>
+                        <?php } ?>
+
                         <!-- Buttons -->
                         <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                             <i class="fa-solid fa-chevron-left"></i>
@@ -143,20 +153,15 @@ require "config/seo.php";
                 <div class="project-item bg-white rounded-3xl shadow-lg overflow-hidden grid md:grid-cols-2" data-category="structure">
                     <!-- SLIDER -->
                     <div class="relative overflow-hidden h-72 md:h-96 lg:h-[450px ]">
-                        <img src="assets/images/projects/struktur/st1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700">
-                        <img src="assets/images/projects/struktur/st2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st4.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st5.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st6.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st7.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st8.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st9.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st10.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st11.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st12.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st13.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
-                        <img src="assets/images/projects/struktur/st14.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/struktur/st1.jpg'">
+                        
+                        <?php foreach ($structureSlides as $i => $src) { ?>
+                            <img
+                                src="<?= $escapeAttr($src); ?>"
+                                alt="<?= $structureAltBase; ?><?= $i ? ' - Photo ' . ($i + 1) : ''; ?>"
+                                class="project-slide w-full h-full object-cover absolute transition duration-700<?= $i ? ' opacity-0' : ''; ?>"
+                                <?= $i ? 'onerror="this.src=\'' . $escapeAttr($structureFallback) . '\'"' : ''; ?>>
+                        <?php } ?>
+
 
                         <!-- Buttons -->
                         <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
@@ -190,13 +195,15 @@ require "config/seo.php";
                 <div class="project-item bg-white rounded-3xl shadow-lg overflow-hidden grid md:grid-cols-2" data-category="mep">
                     <!-- slider      -->
                     <div class="relative overflow-hidden h-72 md:h-96 lg:h-[450px ]">
-                        <img src="assets/images/projects/mep/me1.jpg" class="project-slide w-full h-full object-cover absolute transition duration-700" onerror="this.src='assets/images/projects/project1-1.jpg'">
-                        <img src="assets/images/projects/mep/me2.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-2.jpg'">
-                        <img src="assets/images/projects/mep/me3.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-3.jpg'">
-                        <img src="assets/images/projects/mep/me4.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-3.jpg'">
-                        <img src="assets/images/projects/mep/me5.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-3.jpg'">
-                        <img src="assets/images/projects/mep/me6.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-3.jpg'">
-                        <img src="assets/images/projects/mep/me7.jpg" class="project-slide w-full h-full object-cover absolute opacity-0 transition duration-700" onerror="this.src='assets/images/projects/project1-3.jpg'">
+                        
+                        <?php foreach ($mepSlides as $i => $src) { ?>
+                            <img
+                                src="<?= $escapeAttr($src); ?>"
+                                alt="<?= $mepAltBase; ?><?= $i ? ' - Photo ' . ($i + 1) : ''; ?>"
+                                class="project-slide w-full h-full object-cover absolute transition duration-700<?= $i ? ' opacity-0' : ''; ?>"
+                                <?= $i ? 'onerror="this.src=\'' . $escapeAttr($mepFallback) . '\'"' : ''; ?>>
+                        <?php } ?>
+
 
                         <button onclick="prevSlide(this)" class="absolute left-5 top-1/2 -translate-y-1/2 bg-white/80 w-10 h-10 rounded-full">
                             <i class="fa-solid fa-chevron-left"></i>
@@ -242,7 +249,7 @@ require "config/seo.php";
                     <button onclick="modalNext()" class="absolute right-4 md:right-16 top-1/2 -translate-y-1/2 bg-white/90 w-10 h-10 rounded-full z-50">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
-                    <img id="modalImage" src="" alt="" class="w-full h-auto object-contain bg-black">
+                    <img id="modalImage" src="" alt="SJCM project portfolio image" class="w-full h-auto object-contain bg-black">
                     <!-- <div id="modalCaption" class="p-4 text-gray-700"></div> -->
                 </div>
             </div>
@@ -392,6 +399,7 @@ require "config/seo.php";
             // Modal: buka foto besar
             let modalSlides = [];
             let modalIndex = 0;
+            let modalAlt = 'SJCM project portfolio image';
 
             function openModal(button) {
                 const container = button.closest('.project-item');
@@ -404,7 +412,10 @@ require "config/seo.php";
                 const caption = captionEl ? captionEl.innerText.trim() : '';
 
                 const modal = document.getElementById('imageModal');
-                document.getElementById('modalImage').src = modalSlides[modalIndex] || '';
+                const modalImage = document.getElementById('modalImage');
+                modalAlt = caption ? `${caption} - SJCM` : 'SJCM project portfolio image';
+                modalImage.src = modalSlides[modalIndex] || '';
+                modalImage.alt = modalAlt;
                 // document.getElementById('modalCaption').innerText = caption;
                 modal.classList.remove('hidden');
                 // focus to capture keyboard
@@ -414,19 +425,25 @@ require "config/seo.php";
             function modalNext() {
                 if (!modalSlides || !modalSlides.length) return;
                 modalIndex = (modalIndex + 1) % modalSlides.length;
-                document.getElementById('modalImage').src = modalSlides[modalIndex];
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = modalSlides[modalIndex];
+                modalImage.alt = modalAlt;
             }
 
             function modalPrev() {
                 if (!modalSlides || !modalSlides.length) return;
                 modalIndex = (modalIndex - 1 + modalSlides.length) % modalSlides.length;
-                document.getElementById('modalImage').src = modalSlides[modalIndex];
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = modalSlides[modalIndex];
+                modalImage.alt = modalAlt;
             }
 
             function closeModal() {
                 const modal = document.getElementById('imageModal');
                 modal.classList.add('hidden');
-                document.getElementById('modalImage').src = '';
+                const modalImage = document.getElementById('modalImage');
+                modalImage.src = '';
+                modalImage.alt = 'SJCM project portfolio image';
                 // document.getElementById('modalCaption').innerText = '';
             }
 
